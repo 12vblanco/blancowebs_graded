@@ -1,25 +1,23 @@
 {
   "name": "blancowebs",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlancoWebs/blancowebs_graded.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^5.0.0",
-    "sass": "^1.32.8"
-  },
-  "dependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BlancoWebs/graded_unit.git"
-  },
   "bugs": {
-    "url": "https://github.com/BlancoWebs/graded_unit/issues"
+    "url": "https://github.com/BlancoWebs/blancowebs_graded/issues"
   },
-  "homepage": "https://github.com/BlancoWebs/graded_unit#readme",
-  "description": ""
+  "homepage": "https://github.com/BlancoWebs/blancowebs_graded#readme",
+  "devDependencies": {
+    "sass": "^1.32.8"
+  }
 }

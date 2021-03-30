@@ -47,10 +47,8 @@
   background: $primary-color;
   background: radial-gradient(
     circle,
-    rgb(50, 12, 88) 1%,
-    rgba(0, 0, 82, 1) 21%,
-    rgb(88, 12, 88) 3%,
-    rgba(0, 0, 82, 1) 29%
+    rgb(50, 12, 88) 8%,
+    rgba(0, 0, 82, 1) 48%
   );
   width: 100%;
   min-height: 40vh;
@@ -69,20 +67,22 @@
 
 // FORM
 #form {
-  display: none;
+  // display: flex;
+  visibility: hidden;
+  height: 0;
   width: 100%;
-  height: auto;
-  // transition: opacity 0s;
+  opacity: 0;
+  transition: opacity 0.1s ease;
 }
 
 // WORKS
 #works {
   height: 58rem;
-  z-index: -1;
-  // background-image: url(../../images/blur_yellow_pink.svg);
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: center;
+  z-index: 1;
+  background-image: url(../../images/blur_yellow_pink.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   h1 {
     @include header;

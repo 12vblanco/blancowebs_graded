@@ -443,16 +443,17 @@ textarea {
   color: #000052;
 }
 
-.two,
-.three {
-  position: relative;
-  width: auto;
-  height: 58rem;
-  background: #fefffe;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  box-sizing: border-box;
-  box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
-  border-radius: 32px 0px;
+.lift {
+  position: absolute;
+  top: 0rem;
+}
+
+.lift a {
+  margin: 0 4.4rem;
+}
+
+.red {
+  color: red;
 }
 
 #showcase {
@@ -512,7 +513,7 @@ textarea {
 
 #contact {
   background: #000052;
-  background: radial-gradient(circle, #320c58 1%, #000052 21%, #580c58 3%, #000052 29%);
+  background: radial-gradient(circle, #320c58 8%, #000052 48%);
   width: 100%;
   min-height: 40vh;
   height: auto;
@@ -542,14 +543,20 @@ textarea {
 }
 
 #form {
-  display: none;
+  visibility: hidden;
+  height: 0;
   width: 100%;
-  height: auto;
+  opacity: 0;
+  transition: opacity 0.1s ease;
 }
 
 #works {
   height: 58rem;
-  z-index: -1;
+  z-index: 1;
+  background-image: url(../../images/blur_yellow_pink.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 #works h1 {
   color: #fff;
@@ -1020,16 +1027,17 @@ textarea {
   color: #000052;
 }
 
-.two,
-.three {
-  position: relative;
-  width: auto;
-  height: 58rem;
-  background: #fefffe;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  box-sizing: border-box;
-  box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
-  border-radius: 32px 0px;
+.lift {
+  position: absolute;
+  top: 0rem;
+}
+
+.lift a {
+  margin: 0 4.4rem;
+}
+
+.red {
+  color: red;
 }
 
 #navbar {

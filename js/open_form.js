@@ -1,15 +1,19 @@
 const button = document.querySelector('.button_open');
 const form = document.querySelector('#form');
 const close = document.querySelector('.close');
-const input = document.querySelector('input');
+
 button.addEventListener('click', () => {
-    form.style.height = 'auto';
-    form.style.display = 'flex';
+    form.style.height = '50rem';
+    form.style.visibility = 'visible';
+    form.style.opacity = '1';
+    document.getElementById("form").style.transition = "all .4s";
 
 });
+
 close.addEventListener('click', () => {
-    form.style.display = 'none';
-    input.trigger("reset");
-});
+    form.style.height = '0';
+    form.style.visibility = 'hidden';
+    document.getElementById("form").style.transition = "height 0.4s";
+    // document.getElementById("form").style.transition = "opacity 0.2s";
 
-document.getElementByClass("form").style.transition = "display 2s";
+});
