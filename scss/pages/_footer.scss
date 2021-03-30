@@ -1,0 +1,72 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/fonts' as *;
+
+#footer {
+  width: 100vw;
+  min-height: 40vh;
+  height: auto;
+  background: $primary-color;
+  border-radius: 12px 12px 0 0;
+  color: $white;
+  z-index: 12;
+}
+
+.container {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 12;
+}
+
+.copy {
+  font-family: $primary-font;
+  position: relative;
+  margin-top: 9rem;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.my_name {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.red {
+  position: relative;
+  bottom: 0;
+  color: red;
+  margin: 0 1rem;
+}
+
+.container_section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+ul li {
+  list-style: none;
+}
+.footer_item {
+  font-family: $primary-font;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 1rem;
+  .fab,
+  .far,
+  .fas {
+    font-size: 1.5rem;
+    margin-right: 0.3rem;
+  }
+}
+.footer_title {
+  margin: 9rem 0 2rem 0;
+  font-family: $primary-font;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  border-bottom: 2px solid $white;
+}

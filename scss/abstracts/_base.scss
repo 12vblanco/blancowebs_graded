@@ -1,0 +1,19 @@
+@use 'variables' as *;
+@use 'fonts' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  background: $bg-clear;
+  scroll-behavior: smooth;
+}
+body {
+  background-image: url(../../images/bg_blur_white.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

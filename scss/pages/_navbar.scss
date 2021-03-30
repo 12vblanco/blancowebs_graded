@@ -1,0 +1,50 @@
+@use '../abstracts/' as *;
+
+#navbar {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  background: $white;
+}
+.navbar_logo {
+  margin: 1.2rem 0rem 1rem 2rem;
+}
+
+.navbar_menu {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+}
+.navbar_menu-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+}
+.navbar_menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: $primary-font;
+  font-weight: 900;
+  font-size: 1.8rem;
+  margin-left: 6rem;
+
+  .fab {
+    font-size: 3rem;
+  }
+
+  & a:active,
+  & a:link,
+  .fab {
+    color: $primary-color;
+    text-decoration: none;
+    transition: color 0.4s ease;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}

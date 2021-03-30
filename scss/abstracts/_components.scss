@@ -1,0 +1,124 @@
+@use 'variables' as *;
+@use 'fonts' as *;
+
+// BUTTONS
+.btn {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 3rem;
+  width: fit-content;
+  font-weight: 900;
+  font-size: 18px;
+  padding: 12px 18px;
+  border-radius: 16px;
+  background: none;
+  color: $white;
+  border: 3px solid $white;
+  cursor: pointer;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    color: $primary-color;
+    transition: all 0.4s ease;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 0px;
+    width: 0px;
+    border-radius: 6px;
+    background: $white;
+    transform-origin: bottom right;
+    border: 0px;
+    transition-property: height width;
+    transition-duration: 0.4s;
+    z-index: -1;
+  }
+
+  &:hover::after {
+    width: 100%;
+    height: 100%;
+  }
+
+  &:active {
+    color: $accent;
+  }
+}
+.btn_form {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 2rem;
+  max-width: 16rem;
+  // width: auto;
+  // height: auto;
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: $primary-color;
+  padding: 12px 18px;
+  border-radius: 16px;
+  border: 3px solid $primary-color;
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.25),
+    6px 6px 14px rgba(0, 0, 0, 0.25),
+    inset 3px 3px 8px rgba(255, 255, 255, 0.25),
+    inset -3px -3px 8px rgba(0, 0, 0, 0.25);
+  transition: all 0.4 ease-in;
+  text-transform: uppercase;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  // &:hover {
+  // }
+
+  &:hover::after {
+    width: 100%;
+    height: 100%;
+  }
+
+  &:active {
+    border: 3px solid rgba(255, 255, 255, 0.25);
+    box-shadow: -3px -3px 8px rgba(255, 255, 255, 0.25),
+      3px 3px 6px rgba(0, 0, 0, 0.25),
+      inset 1px 1px 4px rgba(255, 255, 255, 0.25),
+      inset -1px -1px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+// CONTAINERS
+@mixin main_container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+// CARDS
+.cards_container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 90%;
+  margin: 0 auto;
+  //   padding-top: 13%;
+}
+.card {
+  width: 30rem;
+  height: 36rem;
+  background: $white;
+  border-radius: 12px;
+  border: 0.25px solid rgba($primary-color, 0.2);
+  box-shadow: 2px 2px 8px rgba($primary-color, 0.3);
+}
