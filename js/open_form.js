@@ -11,10 +11,8 @@ button.addEventListener('click', () => {
 });
 
 close.addEventListener('click', () => {
-    
     form.style.height = '0';
     form.style.visibility = 'hidden';
     form.style.opacity = '0';
-
     document.getElementById("form").style.transition = "height 0.4s, opacity .4s";
 });

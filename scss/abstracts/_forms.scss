@@ -80,9 +80,21 @@ textarea {
   font-weight: 900;
   font-size: 3.4rem;
   color: $primary-color;
+  z-index: 1;
   cursor: pointer;
   transition: all 0.3s ease;
   &:hover {
     transform: rotate(90deg);
   }
+}
+
+.reset {
+  width: 20px;
+  font-size: 0;
+  border-radius: 0;
+  box-shadow: none;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
 }
