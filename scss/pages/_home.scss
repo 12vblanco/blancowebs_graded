@@ -30,6 +30,10 @@
     max-width: 100%;
     padding-top: 3rem;
   }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 // CARDS SECTION
@@ -47,8 +51,8 @@
   background: $primary-color;
   background: radial-gradient(
     circle,
-    rgb(50, 12, 88) 8%,
-    rgba(0, 0, 82, 1) 48%
+    rgb(90, 13, 77) 0.2%,
+    rgba(0, 0, 82, 1) 8%
   );
   width: 100%;
   min-height: 40vh;
@@ -67,11 +71,16 @@
 
 // FORM
 #form {
-  // display: flex;
+  background: $bg-clear;
+  background: radial-gradient(
+    circle,
+    rgb(227, 227, 226) 42%,
+    rgba(229, 229, 229) 5%
+  );
   visibility: hidden;
+  opacity: 0;
   height: 0;
   width: 100%;
-  opacity: 0;
   transition: opacity 0.1s ease;
 }
 

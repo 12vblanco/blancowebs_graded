@@ -501,6 +501,10 @@ textarea {
   max-width: 100%;
   padding-top: 3rem;
 }
+#showcase a {
+  text-decoration: none;
+  color: inherit;
+}
 
 #cards {
   width: 100%;
@@ -513,7 +517,7 @@ textarea {
 
 #contact {
   background: #000052;
-  background: radial-gradient(circle, #320c58 8%, #000052 48%);
+  background: radial-gradient(circle, #5a0d4d 0.2%, #000052 8%);
   width: 100%;
   min-height: 40vh;
   height: auto;
@@ -543,10 +547,12 @@ textarea {
 }
 
 #form {
+  background: #e5e5e5;
+  background: radial-gradient(circle, #e3e3e2 42%, #e5e5e5 5%);
   visibility: hidden;
+  opacity: 0;
   height: 0;
   width: 100%;
-  opacity: 0;
   transition: opacity 0.1s ease;
 }
 
