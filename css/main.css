@@ -377,7 +377,7 @@ textarea {
 }
 
 .close:hover {
-  transform: rotate(45deg);
+  transform: rotate(90deg);
 }
 
 .slide {
@@ -967,7 +967,7 @@ textarea {
 }
 
 .close:hover {
-  transform: rotate(45deg);
+  transform: rotate(90deg);
 }
 
 .slide {
