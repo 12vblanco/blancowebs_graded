@@ -48,7 +48,7 @@
 }
 
 .btn:active {
-  color: #cc9933;
+  color: #bd01ba;
 }
 
 .btn_form {
@@ -56,7 +56,6 @@
   margin: 0 auto;
   margin-top: 2rem;
   max-width: 16rem;
-  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -251,7 +250,7 @@ body {
 }
 
 .burger_item a:hover {
-  color: #cc9933;
+  color: #bd01ba;
 }
 
 .fab {
@@ -367,7 +366,7 @@ textarea {
 .wrapper {
   padding: 2rem;
   display: grid;
-  grid-template-columns: repeat(10, 40vw);
+  grid-template-columns: repeat(10, auto);
   grid-template-rows: 1fr;
   grid-column-gap: 3rem;
   overflow: scroll;
@@ -391,9 +390,9 @@ textarea {
   border-radius: 3px;
   font-size: 0;
   background: #e5e5e5;
-  font-size: 3rem;
+  font-size: 3.6rem;
   text-align: center;
-  border-radius: 0 32px;
+  border-radius: 0 62px;
   padding: 2rem;
 }
 
@@ -406,10 +405,17 @@ textarea {
   background: transparent;
 }
 
+.slide:nth-child(1) .works_text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .slide:nth-child(1) h1 {
   font-size: 8rem;
   font-weight: 900;
-  margin-top: 8rem;
+  vertical-align: middle;
 }
 
 .slide:nth-child(1) h2 {
@@ -426,14 +432,15 @@ textarea {
   font-size: 0.6em;
 }
 
-.fas {
-  font-size: 2rem;
+.arrow_left {
+  font-size: 3.2rem;
   vertical-align: middle;
   color: #000052;
   padding-bottom: 0.2rem;
 }
 
 .slide:nth-child(2) {
+  width: 86rem;
   background-image: url(../../images/varuna_desk.jpg);
   background-position: center;
   background-size: cover;
@@ -441,6 +448,7 @@ textarea {
 }
 
 .slide:nth-child(3) {
+  width: 86rem;
   background-image: url(../../images/orchard_desk.jpg);
   background-position: center;
   background-size: cover;
@@ -448,6 +456,7 @@ textarea {
 }
 
 .slide:nth-child(4) {
+  width: 86rem;
   background-image: url(../../images/maite_desk.jpg);
   background-position: center;
   background-size: cover;
@@ -455,6 +464,7 @@ textarea {
 }
 
 .slide:nth-child(5) {
+  width: 86rem;
   background-image: url(../../images/alchemist_desk.jpg);
   background-position: center;
   background-size: cover;
@@ -462,6 +472,7 @@ textarea {
 }
 
 .slide:nth-child(6) {
+  width: 86rem;
   background-image: url(../../images/victor_desk.jpg);
   background-position: center;
   background-size: cover;
@@ -473,7 +484,7 @@ textarea {
   position: relative;
   width: fit-content;
   margin: 0 auto;
-  top: 37rem;
+  top: 50rem;
   font-weight: 700;
   color: #000052;
   margin-top: 2.4rem;
@@ -484,7 +495,7 @@ textarea {
 
 #showcase {
   background-color: #000052;
-  background: radial-gradient(circle, #000052 35%, #1a10a5 100%);
+  background: radial-gradient(circle, #000052 35%, #2a20aa 105%);
   animation: show 80s infinite alternate;
   background-size: 20%;
   background-position: center;
@@ -629,7 +640,7 @@ textarea {
 }
 
 #works {
-  height: 50rem;
+  height: 65rem;
   z-index: 1;
   background-image: url(../../images/blur_yellow_pink.svg);
   background-repeat: no-repeat;
@@ -684,7 +695,7 @@ textarea {
 }
 
 .btn:active {
-  color: #cc9933;
+  color: #bd01ba;
 }
 
 .btn_form {
@@ -692,7 +703,6 @@ textarea {
   margin: 0 auto;
   margin-top: 2rem;
   max-width: 16rem;
-  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -887,7 +897,7 @@ body {
 }
 
 .burger_item a:hover {
-  color: #cc9933;
+  color: #bd01ba;
 }
 
 .fab {
@@ -1003,7 +1013,7 @@ textarea {
 .wrapper {
   padding: 2rem;
   display: grid;
-  grid-template-columns: repeat(10, 40vw);
+  grid-template-columns: repeat(10, auto);
   grid-template-rows: 1fr;
   grid-column-gap: 3rem;
   overflow: scroll;
@@ -1027,9 +1037,9 @@ textarea {
   border-radius: 3px;
   font-size: 0;
   background: #e5e5e5;
-  font-size: 3rem;
+  font-size: 3.6rem;
   text-align: center;
-  border-radius: 0 32px;
+  border-radius: 0 62px;
   padding: 2rem;
 }
 
@@ -1042,10 +1052,17 @@ textarea {
   background: transparent;
 }
 
+.slide:nth-child(1) .works_text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .slide:nth-child(1) h1 {
   font-size: 8rem;
   font-weight: 900;
-  margin-top: 8rem;
+  vertical-align: middle;
 }
 
 .slide:nth-child(1) h2 {
@@ -1062,14 +1079,15 @@ textarea {
   font-size: 0.6em;
 }
 
-.fas {
-  font-size: 2rem;
+.arrow_left {
+  font-size: 3.2rem;
   vertical-align: middle;
   color: #000052;
   padding-bottom: 0.2rem;
 }
 
 .slide:nth-child(2) {
+  width: 86rem;
   background-image: url(../../images/varuna_desk.jpg);
   background-position: center;
   background-size: cover;
@@ -1077,6 +1095,7 @@ textarea {
 }
 
 .slide:nth-child(3) {
+  width: 86rem;
   background-image: url(../../images/orchard_desk.jpg);
   background-position: center;
   background-size: cover;
@@ -1084,6 +1103,7 @@ textarea {
 }
 
 .slide:nth-child(4) {
+  width: 86rem;
   background-image: url(../../images/maite_desk.jpg);
   background-position: center;
   background-size: cover;
@@ -1091,6 +1111,7 @@ textarea {
 }
 
 .slide:nth-child(5) {
+  width: 86rem;
   background-image: url(../../images/alchemist_desk.jpg);
   background-position: center;
   background-size: cover;
@@ -1098,6 +1119,7 @@ textarea {
 }
 
 .slide:nth-child(6) {
+  width: 86rem;
   background-image: url(../../images/victor_desk.jpg);
   background-position: center;
   background-size: cover;
@@ -1109,7 +1131,7 @@ textarea {
   position: relative;
   width: fit-content;
   margin: 0 auto;
-  top: 37rem;
+  top: 50rem;
   font-weight: 700;
   color: #000052;
   margin-top: 2.4rem;
@@ -1166,7 +1188,7 @@ textarea {
 }
 .navbar_menu-item a:active:hover, .navbar_menu-item a:link:hover,
 .navbar_menu-item .fab:hover {
-  color: #cc9933;
+  color: #bd01ba;
 }
 
 .burger {

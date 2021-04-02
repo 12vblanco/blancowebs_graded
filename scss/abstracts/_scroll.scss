@@ -4,7 +4,7 @@
 .wrapper {
   padding: 2rem;
   display: grid;
-  grid-template-columns: repeat(10, 40vw);
+  grid-template-columns: repeat(10, auto);
   grid-template-rows: 1fr;
   grid-column-gap: 3rem;
   overflow: scroll;
@@ -26,9 +26,9 @@
   border-radius: 3px;
   font-size: 0;
   background: $bg-clear;
-  font-size: 3rem;
+  font-size: 3.6rem;
   text-align: center;
-  border-radius: 0 32px;
+  border-radius: 0 62px;
   padding: 2rem;
 }
 
@@ -39,10 +39,16 @@
   color: $primary-color;
   margin: 0 8rem;
   background: transparent;
+  .works_text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   h1 {
     font-size: 8rem;
     font-weight: 900;
-    margin-top: 8rem;
+    vertical-align: middle;
   }
   h2 {
     @include subheader;
@@ -52,31 +58,39 @@
     font-size: 0.6em;
   }
 }
-.fas {
-  font-size: 2rem;
+.arrow_left {
+  font-size: 3.2rem;
   vertical-align: middle;
   color: $primary-color;
   padding-bottom: 0.2rem;
 }
 .slide:nth-child(2) {
+  width: 86rem;
+
   background-image: url(../../images/varuna_desk.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .slide:nth-child(3) {
+  width: 86rem;
+
   background-image: url(../../images/orchard_desk.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .slide:nth-child(4) {
+  width: 86rem;
+
   background-image: url(../../images/maite_desk.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .slide:nth-child(5) {
+  width: 86rem;
+
   background-image: url(../../images/alchemist_desk.jpg);
   background-position: center;
   background-size: cover;
@@ -84,6 +98,8 @@
 }
 
 .slide:nth-child(6) {
+  width: 86rem;
+
   background-image: url(../../images/victor_desk.jpg);
   background-position: center;
   background-size: cover;
@@ -94,7 +110,7 @@
   position: relative;
   width: fit-content;
   margin: 0 auto;
-  top: 37rem;
+  top: 50rem;
   font-weight: 700;
   color: $primary-color;
   margin-top: 2.4rem;
