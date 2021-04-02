@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-between;
   background: $white;
+  z-index: 1;
 }
 .navbar_logo {
   margin: 1.2rem 0rem 1rem 2rem;
@@ -21,6 +22,7 @@
   flex-direction: row;
   justify-content: flex-end;
   width: 100%;
+  padding-right: 5rem;
 }
 .navbar_menu-item {
   display: flex;
@@ -47,4 +49,8 @@
       color: $accent;
     }
   }
+}
+.burger {
+  display: none;
+  width: auto;
 }
