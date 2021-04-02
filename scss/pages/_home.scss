@@ -9,9 +9,9 @@
   background: radial-gradient(
     circle,
     rgba(0, 0, 82, 1) 35%,
-    rgb(9, 1, 129) 100%
+    rgb(26, 16, 165) 100%
   );
-  animation: show 98s infinite alternate;
+  animation: show 80s infinite alternate;
   // background-repeat: no-repeat;
   background-size: 20%;
   background-position: center;
@@ -85,6 +85,20 @@
     margin-top: 6rem;
   }
 }
+.cards_gradient {
+  animation: cards_gr 25s infinite alternate;
+}
+
+@keyframes cards_gr {
+  0% {
+    transform: scale(1);
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: scale(1.8);
+    transform: rotate(40deg);
+  }
+}
 
 // CONTACT SECTION
 #contact {
@@ -135,25 +149,10 @@
 
 // WORKS
 #works {
-  height: 58rem;
+  height: 50rem;
   z-index: 1;
   background-image: url(../../images/blur_yellow_pink.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
-  h1 {
-    @include header;
-    text-align: left;
-    padding-top: 0.1rem;
-    margin-left: 3rem;
-    color: $primary-color;
-  }
-  h2 {
-    @include subheader;
-    color: $primary-color;
-    text-align: center;
-    margin-left: 3rem;
-    font-size: 2rem;
-  }
 }

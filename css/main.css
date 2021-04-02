@@ -101,6 +101,7 @@ body {
   background-image: url(../../images/bg_blur_white.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: "Montserrat", sans-serif;
 }
 
 .menu_wrap {
@@ -364,7 +365,7 @@ textarea {
 }
 
 .wrapper {
-  padding: 3rem;
+  padding: 2rem;
   display: grid;
   grid-template-columns: repeat(10, 40vw);
   grid-template-rows: 1fr;
@@ -392,16 +393,99 @@ textarea {
   background: #e5e5e5;
   font-size: 3rem;
   text-align: center;
+  border-radius: 0 32px;
+  padding: 2rem;
 }
 
 .slide:nth-child(1) {
+  font-weight: 900;
+  font-size: 3rem;
+  text-align: center;
+  color: #000052;
   margin: 0 8rem;
+  background: transparent;
+}
+
+.slide:nth-child(1) h1 {
+  font-size: 8rem;
+  font-weight: 900;
+  margin-top: 8rem;
+}
+
+.slide:nth-child(1) h2 {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 4rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 3rem;
+  color: #000052;
+  text-align: center;
+  letter-spacing: 0.4rem;
+  font-size: 0.6em;
+}
+
+.fas {
+  font-size: 2rem;
+  vertical-align: middle;
+  color: #000052;
+  padding-bottom: 0.2rem;
+}
+
+.slide:nth-child(2) {
+  background-image: url(../../images/varuna_desk.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slide:nth-child(3) {
+  background-image: url(../../images/orchard_desk.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slide:nth-child(4) {
+  background-image: url(../../images/maite_desk.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slide:nth-child(5) {
+  background-image: url(../../images/alchemist_desk.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slide:nth-child(6) {
+  background-image: url(../../images/victor_desk.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: "Montserrat", sans-serif;
+}
+
+.slide_p {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  top: 37rem;
+  font-weight: 700;
+  color: #000052;
+  margin-top: 2.4rem;
+  background: rgba(223, 223, 223, 0.9);
+  padding: 0.4rem 1.6rem;
+  border-radius: 16px;
 }
 
 #showcase {
   background-color: #000052;
-  background: radial-gradient(circle, #000052 35%, #090181 100%);
-  animation: show 98s infinite alternate;
+  background: radial-gradient(circle, #000052 35%, #1a10a5 100%);
+  animation: show 80s infinite alternate;
   background-size: 20%;
   background-position: center;
   max-width: 100vw;
@@ -487,6 +571,20 @@ textarea {
   margin-top: 6rem;
 }
 
+.cards_gradient {
+  animation: cards_gr 25s infinite alternate;
+}
+
+@keyframes cards_gr {
+  0% {
+    transform: scale(1);
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: scale(1.8);
+    transform: rotate(40deg);
+  }
+}
 #contact {
   background: #000052;
   background: radial-gradient(circle, #000052 35%, #090181 100%);
@@ -531,38 +629,12 @@ textarea {
 }
 
 #works {
-  height: 58rem;
+  height: 50rem;
   z-index: 1;
   background-image: url(../../images/blur_yellow_pink.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-#works h1 {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 8rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-  text-align: center;
-  padding-top: 16rem;
-  text-align: left;
-  padding-top: 0.1rem;
-  margin-left: 3rem;
-  color: #000052;
-}
-#works h2 {
-  color: #fff;
-  text-transform: capitalize;
-  font-size: 4rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-  text-align: center;
-  padding-top: 3rem;
-  color: #000052;
-  text-align: center;
-  margin-left: 3rem;
-  font-size: 2rem;
 }
 
 .btn {
@@ -665,6 +737,7 @@ body {
   background-image: url(../../images/bg_blur_white.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: "Montserrat", sans-serif;
 }
 
 .menu_wrap {
@@ -928,7 +1001,7 @@ textarea {
 }
 
 .wrapper {
-  padding: 3rem;
+  padding: 2rem;
   display: grid;
   grid-template-columns: repeat(10, 40vw);
   grid-template-rows: 1fr;
@@ -956,10 +1029,93 @@ textarea {
   background: #e5e5e5;
   font-size: 3rem;
   text-align: center;
+  border-radius: 0 32px;
+  padding: 2rem;
 }
 
 .slide:nth-child(1) {
+  font-weight: 900;
+  font-size: 3rem;
+  text-align: center;
+  color: #000052;
   margin: 0 8rem;
+  background: transparent;
+}
+
+.slide:nth-child(1) h1 {
+  font-size: 8rem;
+  font-weight: 900;
+  margin-top: 8rem;
+}
+
+.slide:nth-child(1) h2 {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 4rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 3rem;
+  color: #000052;
+  text-align: center;
+  letter-spacing: 0.4rem;
+  font-size: 0.6em;
+}
+
+.fas {
+  font-size: 2rem;
+  vertical-align: middle;
+  color: #000052;
+  padding-bottom: 0.2rem;
+}
+
+.slide:nth-child(2) {
+  background-image: url(../../images/varuna_desk.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slide:nth-child(3) {
+  background-image: url(../../images/orchard_desk.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slide:nth-child(4) {
+  background-image: url(../../images/maite_desk.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slide:nth-child(5) {
+  background-image: url(../../images/alchemist_desk.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slide:nth-child(6) {
+  background-image: url(../../images/victor_desk.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: "Montserrat", sans-serif;
+}
+
+.slide_p {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  top: 37rem;
+  font-weight: 700;
+  color: #000052;
+  margin-top: 2.4rem;
+  background: rgba(223, 223, 223, 0.9);
+  padding: 0.4rem 1.6rem;
+  border-radius: 16px;
 }
 
 #navbar {
@@ -1052,6 +1208,7 @@ textarea {
 }
 
 .red {
+  font-size: 1.4rem;
   position: relative;
   bottom: 0;
   color: red;
