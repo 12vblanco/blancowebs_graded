@@ -275,10 +275,6 @@ body {
   padding: 0 2rem;
 }
 
-.form_blur {
-  position: absolute;
-}
-
 /* form body */
 .form_container {
   width: 100%;
@@ -538,8 +534,28 @@ textarea {
 }
 
 .slide:nth-child(7) .fas {
-  margin: 6rem;
+  margin: 6rem 9rem 6rem 0;
   font-size: 6rem;
+}
+
+.go {
+  margin: 18rem 0.2rem 0 0;
+}
+
+.go a {
+  text-decoration: none;
+  color: #000033;
+  font-size: 6rem;
+  cursor: pointer;
+  background: #f54642;
+  border-radius: 50%;
+  padding: 5rem 3rem;
+}
+
+.go a:hover {
+  background: #f54642;
+  border-radius: 50%;
+  padding: 5rem 3rem;
 }
 
 #cards {
@@ -686,6 +702,20 @@ textarea {
 #showcase_paragraph {
   text-align: center;
 }
+#showcase #web_des {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 180%);
+  width: 60vw;
+  margin: 0;
+}
+#showcase #web_des-text {
+  width: 50%;
+}
 #showcase h1 {
   color: #fff;
   text-transform: uppercase;
@@ -706,6 +736,8 @@ textarea {
   max-width: 56rem;
   margin: 0 auto;
   color: #fff;
+  position: relative;
+  top: 20rem;
 }
 #showcase .paragraph_secondary {
   font-weight: 200;
@@ -715,6 +747,11 @@ textarea {
 #showcase a {
   text-decoration: none;
   color: inherit;
+}
+
+.btn_showcase {
+  position: relative;
+  top: 20rem;
 }
 
 @-webkit-keyframes show {
@@ -763,7 +800,7 @@ textarea {
   margin-top: 6rem;
 }
 
-.cards_gradient {
+#cards_gradient {
   -webkit-animation: cards_gr 38s infinite alternate;
   animation: cards_gr 38s infinite alternate;
   position: absolute;
@@ -1118,10 +1155,6 @@ body {
   padding: 0 2rem;
 }
 
-.form_blur {
-  position: absolute;
-}
-
 /* form body */
 .form_container {
   width: 100%;
@@ -1381,8 +1414,28 @@ textarea {
 }
 
 .slide:nth-child(7) .fas {
-  margin: 6rem;
+  margin: 6rem 9rem 6rem 0;
   font-size: 6rem;
+}
+
+.go {
+  margin: 18rem 0.2rem 0 0;
+}
+
+.go a {
+  text-decoration: none;
+  color: #000033;
+  font-size: 6rem;
+  cursor: pointer;
+  background: #f54642;
+  border-radius: 50%;
+  padding: 5rem 3rem;
+}
+
+.go a:hover {
+  background: #f54642;
+  border-radius: 50%;
+  padding: 5rem 3rem;
 }
 
 #cards {

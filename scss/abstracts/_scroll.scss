@@ -135,8 +135,28 @@
     text-align: right;
   }
   .fas {
-    margin: 6rem;
+    margin: 6rem 9rem 6rem 0;
     font-size: 6rem;
+  }
+}
+.go {
+  margin: 18rem 0.2rem 0 0;
+}
+.go a {
+  text-decoration: none;
+  color: $secondary-color;
+  font-size: 6rem;
+  cursor: pointer;
+  background: $accent;
+
+  border-radius: 50%;
+  padding: 5rem 3rem;
+
+  &:hover {
+    background: $accent;
+
+    border-radius: 50%;
+    padding: 5rem 3rem;
   }
 }
 

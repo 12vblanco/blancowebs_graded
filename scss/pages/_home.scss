@@ -20,6 +20,22 @@
   &_paragraph {
     text-align: center;
   }
+
+  #web_des {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 180%);
+    width: 60vw;
+    margin: 0;
+    &-text {
+      width: 50%;
+    }
+  }
+
   h1 {
     @include header;
     z-index: 0;
@@ -27,6 +43,8 @@
   p {
     @include paragraph;
     color: $white;
+    position: relative;
+    top: 20rem;
   }
   .paragraph_secondary {
     font-weight: 200;
@@ -38,6 +56,10 @@
     text-decoration: none;
     color: inherit;
   }
+}
+.btn_showcase {
+  position: relative;
+  top: 20rem;
 }
 
 @-webkit-keyframes show {
@@ -98,7 +120,7 @@
     margin-top: 6rem;
   }
 }
-.cards_gradient {
+#cards_gradient {
   -webkit-animation: cards_gr 38s infinite alternate;
   animation: cards_gr 38s infinite alternate;
 
