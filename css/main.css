@@ -118,6 +118,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Montserrat", sans-serif;
+  overflow: visible;
 }
 
 .menu_wrap {
@@ -383,28 +384,6 @@ textarea {
 
 .close:hover {
   transform: rotate(90deg);
-}
-
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(10, auto);
-  grid-template-rows: 1fr;
-  grid-column-gap: 3rem;
-  overflow: scroll;
-  height: 100%;
-  -ms-scroll-snap-type: both mandatory;
-  scroll-snap-type: both mandatory;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-::-webkit-scrollbar {
-  display: none;
-}
-
-.active {
-  -ms-scroll-snap-type: unset;
-  scroll-snap-type: unset;
 }
 
 .slide {
@@ -998,6 +977,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Montserrat", sans-serif;
+  overflow: visible;
 }
 
 .menu_wrap {
@@ -1263,28 +1243,6 @@ textarea {
 
 .close:hover {
   transform: rotate(90deg);
-}
-
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(10, auto);
-  grid-template-rows: 1fr;
-  grid-column-gap: 3rem;
-  overflow: scroll;
-  height: 100%;
-  -ms-scroll-snap-type: both mandatory;
-  scroll-snap-type: both mandatory;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-::-webkit-scrollbar {
-  display: none;
-}
-
-.active {
-  -ms-scroll-snap-type: unset;
-  scroll-snap-type: unset;
 }
 
 .slide {
