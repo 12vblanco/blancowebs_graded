@@ -2,7 +2,7 @@
 @use 'fonts' as *;
 
 .wrapper {
-  // padding: 2rem;
+  padding: 2rem;
   display: grid;
   grid-template-columns: repeat(10, auto);
   grid-template-rows: 1fr;
