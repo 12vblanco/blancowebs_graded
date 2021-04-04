@@ -6,7 +6,6 @@
   min-height: 40vh;
   height: auto;
   background: $primary-color;
-  border-radius: 12px 12px 0 0;
   color: $white;
   z-index: 12;
   display: flex;
@@ -59,7 +58,7 @@
   font-size: 1.4rem;
   position: relative;
   bottom: 0;
-  color: red;
+  color: $accent;
   margin: 0 1rem;
 }
 
