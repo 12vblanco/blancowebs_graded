@@ -8,7 +8,7 @@
     rgb(42, 32, 170) 105%
   );
   -webkit-animation: show 80s infinite alternate;
-          animation: show 80s infinite alternate;
+  animation: show 80s infinite alternate;
   background-size: 20%;
   background-position: center;
   max-width: 100vw;
@@ -100,7 +100,7 @@
 }
 .cards_gradient {
   -webkit-animation: cards_gr 38s infinite alternate;
-          animation: cards_gr 38s infinite alternate;
+  animation: cards_gr 38s infinite alternate;
 
   position: absolute;
   left: 0;
@@ -141,19 +141,19 @@
     rgb(9, 1, 129) 100%
   );
   -webkit-animation: show 298s infinite alternate;
-          animation: show 298s infinite alternate;
+  animation: show 298s infinite alternate;
   // background-repeat: no-repeat;
   background-size: 140%;
   background-position: center;
-  max-width: 100vw;
-  min-height: 40vh;
+  width: 100vw;
+  min-height: 46vh;
   height: auto;
   // border-radius: 12px;
   @include main_container;
 
   h1 {
     @include header;
-    padding-top: 5rem;
+    padding-top: 8rem;
   }
   h2 {
     @include subheader;
