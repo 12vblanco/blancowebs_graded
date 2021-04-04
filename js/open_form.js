@@ -19,6 +19,13 @@ close.addEventListener('click', () => {
     document.getElementById("form").style.transition = "height 0.4s, opacity .4s";
 });
 
+// BTN BORDER
+const btn_border = document.querySelector('.btn');
+btn_border.addEventListener('hover', (e) => {
+  btn_border.style.btn_border = '0px solid #ffffff';});
+
+
+
 
 // WORKS
 

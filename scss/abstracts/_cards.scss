@@ -1,0 +1,141 @@
+@use 'variables' as *;
+@use 'fonts' as *;
+
+#cards {
+  max-width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 3;
+  margin: 0 auto;
+}
+
+// .cards_container {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 42rem;
+//   height: 50rem;
+//   max-width: 132rem;
+//   z-index: 5;
+// }
+
+.card {
+  background: $white;
+  transform-style: preserve-3d;
+  min-height: 42rem;
+  max-width: 32rem;
+  border-radius: 30px;
+  padding: 2rem 5rem;
+  z-index: 3;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    animation: card_scale 0.5s ease-in-out;
+    transform: scale(1.14);
+  }
+
+  @keyframes card_scale {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.16);
+    }
+    100% {
+      transform: scale(1.14);
+    }
+  }
+}
+.card_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .card_circle {
+    width: 14rem;
+    height: 14rem;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    background: linear-gradient(
+        231.08deg,
+        #5f6fff 14.53%,
+        rgba(255, 255, 255, 0) 88.79%
+      ),
+      linear-gradient(180deg, #ffc530 37.5%, rgba(255, 255, 255, 0) 100%),
+      linear-gradient(227.68deg, #ff2e29 86.62%, rgba(255, 255, 255, 0) 86.63%);
+  }
+}
+
+.img_1 {
+  width: 14rem;
+  z-index: 2;
+  transition: all 0.75s ease-out;
+  margin-right: 12px;
+}
+.img_2 {
+  width: 12rem;
+  z-index: 2;
+  transition: all 0.75s ease-out;
+  margin: 0.5rem;
+}
+.img_3 {
+  width: 8.8rem;
+  z-index: 2;
+  transition: all 0.75s ease-out;
+}
+
+.card_info {
+  font-family: $secondary-font;
+  font-size: 3rem;
+  transition: all 0.75s ease-out;
+}
+
+.card_title {
+  font-size: 3rem;
+  margin-top: 3rem;
+  transition: all 0.75s ease-out;
+  color: $primary-color;
+}
+
+.card_text {
+  font-size: 1.4rem;
+  padding: 2rem 0rem;
+  font-weight: 500;
+  transition: all 0.75s ease-out;
+  text-transform: uppercase;
+  color: $primary-color;
+}
+
+.card_intouch {
+  margin-top: 2rem;
+  transition: all 0.3s ease-out;
+}
+
+.card_intouch {
+  width: 100%;
+  padding: 1rem 0rem;
+  background: $accent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: 600;
+  border: 3px solid $accent;
+  font-family: $primary-font;
+  outline: none;
+
+  &:hover {
+    background: $white;
+    color: $accent;
+    border: 3px solid $accent;
+    font-weight: 600;
+    box-shadow: 4px 4px 12px rgba($color: #000000, $alpha: 0.6);
+  }
+  &:active {
+    box-shadow: 2px 2px 6px rgba($color: #000000, $alpha: 0.4);
+  }
+}

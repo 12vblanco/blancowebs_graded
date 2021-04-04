@@ -14,15 +14,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 38rem;
-  height: 440px;
+  width: 40rem;
+  height: 44rem;
   margin: 3rem;
   z-index: 3;
   background: #efeeee;
-  border: 3px solid rgba(255, 255, 255, 0.25);
+  border: 3px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
-  box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.5),
-    -6px -6px 16px rgba(255, 255, 255, 0.5);
+  box-shadow: 6px 6px 16px rgba(209, 205, 199, 0.6),
+    -6px -6px 16px rgba(255, 255, 255, 0.6);
   border-radius: 32px 0px;
   color: $primary-color;
 }
@@ -41,7 +41,9 @@
   font-weight: 600;
 }
 /* name area */
-input {
+input,
+select,
+textarea {
   position: relative;
   width: 300px;
   height: 50px;
@@ -49,25 +51,39 @@ input {
   @include form_field();
   border-radius: 18px;
   color: $primary-color;
+  font-family: $secondary-font;
 }
-textarea {
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
   position: relative;
   width: 300px;
-  height: 120px;
+  height: 50px;
   margin: 0 auto;
   @include form_field();
-  padding: 2rem;
-  border-radius: 22px;
+  border-radius: 18px;
+  color: $primary-color;
+  font-family: $secondary-font;
+  -webkit-text-fill-color: $primary-color;
+}
+textarea {
+  height: 120px;
 }
 .form_text {
   position: relative;
   width: 155px;
   height: 33px;
   margin-left: 5.6rem;
-  font-family: $primary-font;
-  font-weight: 700;
+  font-family: $secondary-font;
+  font-weight: 600;
   font-size: 1.9rem;
-  line-height: 2.4;
+  line-height: 2.2;
 }
 
 .close {
