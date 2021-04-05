@@ -17,9 +17,6 @@
   padding-bottom: 6rem;
   border-radius: 0 0 255px 255px;
   @include main_container;
-  &_paragraph {
-    text-align: center;
-  }
 
   #web_des {
     display: flex;
@@ -35,10 +32,9 @@
     }
   }
   #web_des path {
-    -webkit-animation: animate 6s 1 both;
-    animation: animate 6s 1 both;
+    -webkit-animation: animate 6s 1 forwards;
+    animation: animate 6s 1 forwards;
   }
-
   @-webkit-keyframes animate {
     0% {
       stroke-dasharray: 0 50%;
@@ -75,6 +71,16 @@
       stroke-dasharray: 0 50%;
       stroke-dashoffset: 20%;
     }
+  }
+  .paragraph {
+    @include paragraph;
+    color: $white;
+    margin-top: 20rem;
+  }
+
+  .paragraph_secondary {
+    @include paragraph_secondary;
+    color: $white;
   }
 
   // CARDS SECTION

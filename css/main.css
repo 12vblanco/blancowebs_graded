@@ -665,7 +665,6 @@ textarea {
   border: 3px solid #f54642;
   font-family: "Montserrat", sans-serif;
   outline: none;
-  transform: translateZ(8.8rem);
 }
 
 .card_intouch:hover {
@@ -694,9 +693,6 @@ textarea {
   flex-direction: column;
   text-align: center;
 }
-#showcase_paragraph {
-  text-align: center;
-}
 #showcase #web_des {
   display: flex;
   justify-content: center;
@@ -711,8 +707,8 @@ textarea {
   width: 50%;
 }
 #showcase #web_des path {
-  -webkit-animation: animate 6s 1 both;
-  animation: animate 6s 1 both;
+  -webkit-animation: animate 6s 1 forwards;
+  animation: animate 6s 1 forwards;
 }
 @-webkit-keyframes animate {
   0% {
@@ -749,6 +745,29 @@ textarea {
     stroke-dasharray: 0 50%;
     stroke-dashoffset: 20%;
   }
+}
+#showcase .paragraph {
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 3.6rem;
+  max-width: 56rem;
+  margin: 0 auto;
+  color: #fff;
+  margin-top: 20rem;
+}
+#showcase .paragraph_secondary {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 2.6rem;
+  max-width: 48rem;
+  margin: 0 auto;
+  color: #fff;
 }
 #showcase #cards {
   max-width: 100vw;
@@ -1518,7 +1537,6 @@ textarea {
   border: 3px solid #f54642;
   font-family: "Montserrat", sans-serif;
   outline: none;
-  transform: translateZ(8.8rem);
 }
 
 .card_intouch:hover {
