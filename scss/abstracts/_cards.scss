@@ -16,6 +16,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  transform-style: preserve-3d;
 }
 
 .card {
@@ -27,59 +28,66 @@
   padding: 2rem 5rem;
   z-index: 3;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
-  // transition: all 0.3s ease-in-out;
+  transform: perspective(120rem);
+  transition: all 0.2s ease;
 
-  //   &:hover {
-  //     -webkit-animation: card_scale 0.5s ease-in-out;
-  //     animation: card_scale 0.5s ease-in-out;
+  // &:hover {
+
+  // }
+
+  // &:hover {
+  //   -webkit-animation: card_scale 0.5s ease-in-out;
+  //   animation: card_scale 0.5s ease-in-out;
+  //   transform: scale(1.14);
+  // }
+
+  // @-webkit-keyframes card_scale {
+  //   0% {
+  //     transform: scale(1);
+  //   }
+
+  //   50% {
+  //     transform: scale(1.16);
+  //   }
+  //   100% {
   //     transform: scale(1.14);
   //   }
+  // }
 
-  //   @-webkit-keyframes card_scale {
-  //     0% {
-  //       transform: scale(1);
-  //     }
-
-  //     50% {
-  //       transform: scale(1.16);
-  //     }
-  //     100% {
-  //       transform: scale(1.14);
-  //     }
+  // @keyframes card_scale {
+  //   0% {
+  //     transform: scale(1);
   //   }
 
-  //   @keyframes card_scale {
-  //     0% {
-  //       transform: scale(1);
-  //     }
-
-  //     50% {
-  //       transform: scale(1.16);
-  //     }
-  //     100% {
-  //       transform: scale(1.14);
-  //     }
+  //   50% {
+  //     transform: scale(1.16);
   //   }
+  //   100% {
+  //     transform: scale(1.14);
+  //   }
+  // }
+}
+
+.card_circle {
+  width: 14rem;
+  height: 14rem;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+
+  background: linear-gradient(
+      231.08deg,
+      #5f6fff 14.53%,
+      rgba(255, 255, 255, 0) 88.79%
+    ),
+    linear-gradient(180deg, #ffc530 37.5%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(227.68deg, #ff2e29 86.62%, rgba(255, 255, 255, 0) 86.63%);
 }
 .card_icon {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  .card_circle {
-    width: 14rem;
-    height: 14rem;
-    position: absolute;
-    border-radius: 50%;
-    z-index: 1;
-    background: linear-gradient(
-        231.08deg,
-        #5f6fff 14.53%,
-        rgba(255, 255, 255, 0) 88.79%
-      ),
-      linear-gradient(180deg, #ffc530 37.5%, rgba(255, 255, 255, 0) 100%),
-      linear-gradient(227.68deg, #ff2e29 86.62%, rgba(255, 255, 255, 0) 86.63%);
-  }
+  margin-top: 2rem;
 }
 
 .img_1 {
@@ -87,30 +95,37 @@
   z-index: 2;
   transition: all 0.75s ease-out;
   margin-right: 12px;
+  transform: translateZ(8.8rem);
 }
 .img_2 {
+  position: relative;
+  top: 0.9rem;
   width: 12rem;
   z-index: 2;
   transition: all 0.75s ease-out;
   margin: 0.5rem;
+  transform: translateZ(8.8rem);
 }
 .img_3 {
   width: 8.8rem;
   z-index: 2;
   transition: all 0.75s ease-out;
+  transform: translateZ(8.8rem);
 }
 
 .card_info {
   font-family: $secondary-font;
-  font-size: 3rem;
+  font-size: 2.6rem;
   transition: all 0.75s ease-out;
+  transform: translateZ(8.8rem);
 }
 
 .card_title {
   font-size: 3rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
   transition: all 0.75s ease-out;
   color: $primary-color;
+  transform: translateZ(8.8rem);
 }
 
 .card_text {
@@ -120,14 +135,13 @@
   transition: all 0.75s ease-out;
   text-transform: uppercase;
   color: $primary-color;
+  transform: translateZ(8.8rem);
 }
 
 .card_intouch {
-  margin-top: 2rem;
+  margin-bottom: 1rem;
   transition: all 0.3s ease-out;
-}
-
-.card_intouch {
+  transform: translateZ(8.8rem);
   width: 100%;
   padding: 1rem 0rem;
   background: $accent;
@@ -139,6 +153,7 @@
   border: 3px solid $accent;
   font-family: $primary-font;
   outline: none;
+  transform: translateZ(8.8rem);
 
   &:hover {
     background: $white;
