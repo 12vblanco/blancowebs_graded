@@ -1,3 +1,16 @@
-@import 'pages/home';
-@import 'pages/navbar';
-@import 'pages/footer';
+@import "abstracts/_variables";
+@import "abstracts/_fonts";
+
+@import "abstracts/_base";
+@import "abstracts/_animation";
+@import "abstracts/_forms";
+@import "abstracts/_navbar";
+@import "abstracts/_footer";
+@import "abstracts/_buttons";
+@import "abstracts/_cards";
+@import "abstracts/_work_display";
+
+@import "pages/_home";
+@import "pages/contact";
+@import "pages/terms";
+@import "pages/works";

@@ -1,0 +1,67 @@
+.works_container {
+  @include container;
+  flex-direction: column;
+}
+
+.works_show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.works_card {
+  margin: 2rem;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 0 52px 0 52px;
+  box-shadow: $shade_large;
+}
+.works1,
+.works2,
+.works3,
+.works4,
+.works5,
+.works6 {
+  background-color: $secondary-color;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.works1 {
+  background-image: url("../../images/varuna_desk.jpg");
+}
+.works2 {
+  background-image: url("../../images/maite_desk.jpg");
+}
+.works3 {
+  background-image: url("../../images/orchard_desk.jpg");
+}
+.works4 {
+  background-image: url("../../images/alchemist_desk.jpg");
+}
+.works5 {
+  background-image: url("../../images/victor_desk.jpg");
+}
+
+.works_case {
+  position: relative;
+  width: 30%;
+  border-radius: 50%;
+  height: 30%;
+  top: 65%;
+  right: -65%;
+  box-shadow: $shade_large;
+  img {
+    width: 76rem;
+  }
+}
+
+.works_header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}

@@ -1,8 +1,13 @@
-@use 'variables' as *;
-
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 $primary-font: "Montserrat", sans-serif;
 $secondary-font: "Poppins", sans-serif;
+
+@mixin primary_strong {
+  font-family: $primary-font;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: black;
+}
 
 @mixin header {
   color: $white;
@@ -16,7 +21,7 @@ $secondary-font: "Poppins", sans-serif;
 @mixin subheader {
   color: $white;
   text-transform: capitalize;
-  font-size: 4rem;
+  font-size: 5rem;
   font-family: $secondary-font;
   font-weight: 600;
   letter-spacing: 0.6rem;
@@ -33,7 +38,7 @@ $secondary-font: "Poppins", sans-serif;
   max-width: 56rem;
   margin: 0 auto;
 }
-@mixin paragraph_secondary {
+@mixin subparagraph {
   text-transform: uppercase;
   font-size: 1.8rem;
   font-family: $secondary-font;

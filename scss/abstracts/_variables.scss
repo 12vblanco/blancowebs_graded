@@ -1,7 +1,12 @@
-$primary-color: #000052;
-$secondary-color: #000033;
+$primary-color: #000000;
+$secondary-color: #333;
+// $primary-color: #000052;
+// $secondary-color: #000033;
 
 $bg-clear: rgb(229, 229, 229);
 
 $accent: #f54642;
 $white: #fff;
+
+$shade_large: 8px 8px 16px rgba(0, 0, 0, 0.4);
+$shade_small: 0px 1px 8px rgba(0, 0, 0, 0.2);
