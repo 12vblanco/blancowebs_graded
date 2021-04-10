@@ -1,9 +1,8 @@
 anime({
   targets: '#hello path',
-  strokeDashoffset: [anime.setDashoffset, 198],
+  strokeDashoffset: [anime.setDashoffset, 0],
   easing: 'easeInOutSine',
   duration: 3000,
-  // delay: function(el, i) { return i * 250 },
   direction: 'alternate',
   loop: 1,
   endDelay: 200, 
@@ -29,13 +28,39 @@ anime({
   loop: 1,
 });
 
-anime({
+
+
+var translate = anime.timeline({
+  easing: 'easeOutBounce',
+  duration: 6000
+});
+
+translate
+.add({
   targets: '.showcase_info',
   translateY: -200,
   opacity: 1,
-  duration: 6000,
-  delay: 6400,
+  
+  duration: 2500,
+  delay: 6500,
+})
+.add({
+  targets: '.showcase_info',
+  easing: 'easeInOutElastic',
+  translateX: -300,
+  rotate: '-360',
+  duration: 3000,
+  // delay: -1000,
 });
+
+
+
+
+
+
+
+
+
 
 // anime({
 //   targets: 'blob',
