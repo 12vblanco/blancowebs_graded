@@ -82,3 +82,20 @@ textarea {
     transform: rotate(90deg);
   }
 }
+
+// CONTACT FORM
+
+.contact__form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: $primary-color;
+  color: $white;
+
+  &-form {
+    width: 80rem;
+  }
+}

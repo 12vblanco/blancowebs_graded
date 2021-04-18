@@ -9,6 +9,10 @@ a {
   text-decoration: none;
 }
 
+.active {
+  color: $accent;
+}
+
 html {
   font-size: 62.5%;
   background: $white;
