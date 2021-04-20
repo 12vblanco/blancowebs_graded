@@ -88,14 +88,110 @@ textarea {
 .contact__form {
   width: 100%;
   height: 100%;
+  padding: 8rem;
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   justify-content: center;
   align-items: center;
   background: $primary-color;
   color: $white;
-
+  margin: 0 auto;
   &-form {
-    width: 80rem;
+    width: 60vw;
+    margin: 0 auto;
+  }
+}
+
+// .form__field {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+.form__field {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column-reverse;
+  font-family: $secondary-font;
+  font-size: 8rem;
+  text-transform: uppercase;
+  font-weight: 900;
+
+  textarea {
+    font-size: 3rem;
+  }
+}
+body > section.contact__form > from > div:nth-child(9) > submit {
+  position: relative;
+  left: 50%;
+  transform: translate(-55%);
+  text-align: center;
+  width: 50%;
+}
+#name,
+#email,
+#website,
+#test,
+#cms,
+#comments {
+  background: transparent;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  color: $white;
+  width: 100%;
+  margin-left: -2rem;
+}
+
+#name::placeholder,
+#email::placeholder,
+#comments::placeholder {
+  color: $white;
+  font-size: 3rem;
+}
+
+// website
+.contact__form > from > div:nth-child(5) > label:nth-child(8) {
+  font-size: 3rem;
+  position: relative;
+  top: -22rem;
+  transition: color 0.4s ease;
+  cursor: pointer;
+  &:hover {
+    color: $accent;
+  }
+}
+.toggler__website {
+  position: absolute;
+  top: 72rem;
+  left: -34rem;
+  opacity: 1;
+  cursor: pointer;
+  height: 4rem;
+  width: 8rem;
+  padding: 0 4rem;
+}
+
+// cms
+.contact__form > from > div:nth-child(5) > label:nth-child(5) {
+  font-size: 3rem;
+  position: relative;
+  top: -33rem;
+  transition: color 0.4s ease;
+  cursor: pointer;
+  &:hover {
+    color: $accent;
+  }
+}
+
+// testing
+.contact__form > from > div:nth-child(5) > label:nth-child(2) {
+  font-size: 3rem;
+  position: relative;
+  top: -49rem;
+  transition: color 0.4s ease;
+  cursor: pointer;
+  &:hover {
+    color: $accent;
   }
 }

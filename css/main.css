@@ -134,15 +134,11 @@ textarea {
 .contact__form {
   width: 100%;
   height: 100%;
+  padding: 8rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -153,10 +149,155 @@ textarea {
           align-items: center;
   background: #000000;
   color: #fff;
+  margin: 0 auto;
 }
 
 .contact__form-form {
-  width: 80rem;
+  width: 60vw;
+  margin: 0 auto;
+}
+
+.form__field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: column-reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  font-family: "Poppins", sans-serif;
+  font-size: 8rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.form__field textarea {
+  font-size: 3rem;
+}
+
+body > section.contact__form > from > div:nth-child(9) > submit {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-55%);
+      -ms-transform: translate(-55%);
+       -o-transform: translate(-55%);
+          transform: translate(-55%);
+  text-align: center;
+  width: 50%;
+}
+
+#name,
+#email,
+#website,
+#test,
+#cms,
+#comments {
+  background: transparent;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #fff;
+  width: 100%;
+  margin-left: -2rem;
+}
+
+#name::-webkit-input-placeholder,
+#email::-webkit-input-placeholder,
+#comments::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 3rem;
+}
+
+#name::-moz-placeholder,
+#email::-moz-placeholder,
+#comments::-moz-placeholder {
+  color: #fff;
+  font-size: 3rem;
+}
+
+#name:-ms-input-placeholder,
+#email:-ms-input-placeholder,
+#comments:-ms-input-placeholder {
+  color: #fff;
+  font-size: 3rem;
+}
+
+#name::-ms-input-placeholder,
+#email::-ms-input-placeholder,
+#comments::-ms-input-placeholder {
+  color: #fff;
+  font-size: 3rem;
+}
+
+#name::placeholder,
+#email::placeholder,
+#comments::placeholder {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.contact__form > from > div:nth-child(5) > label:nth-child(8) {
+  font-size: 3rem;
+  position: relative;
+  top: -22rem;
+  -webkit-transition: color 0.4s ease;
+  -o-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+  cursor: pointer;
+}
+
+.contact__form > from > div:nth-child(5) > label:nth-child(8):hover {
+  color: #f54642;
+}
+
+.toggler__website {
+  position: absolute;
+  top: 72rem;
+  left: -34rem;
+  opacity: 1;
+  cursor: pointer;
+  height: 4rem;
+  width: 8rem;
+  padding: 0 4rem;
+}
+
+.contact__form > from > div:nth-child(5) > label:nth-child(5) {
+  font-size: 3rem;
+  position: relative;
+  top: -33rem;
+  -webkit-transition: color 0.4s ease;
+  -o-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+  cursor: pointer;
+}
+
+.contact__form > from > div:nth-child(5) > label:nth-child(5):hover {
+  color: #f54642;
+}
+
+.contact__form > from > div:nth-child(5) > label:nth-child(2) {
+  font-size: 3rem;
+  position: relative;
+  top: -49rem;
+  -webkit-transition: color 0.4s ease;
+  -o-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+  cursor: pointer;
+}
+
+.contact__form > from > div:nth-child(5) > label:nth-child(2):hover {
+  color: #f54642;
 }
 
 #navbar {
@@ -1272,5 +1413,10 @@ ul li {
           background-size: 140%;
   background-position: bottom;
   text-transform: uppercase;
+}
+
+#contact__main {
+  width: 100%;
+  height: 20rem;
 }
 /*# sourceMappingURL=main.css.map */
