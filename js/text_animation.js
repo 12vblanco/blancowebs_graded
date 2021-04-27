@@ -44,14 +44,14 @@ translate
   duration: 2500,
   delay: 6500,
 })
-.add({
-  targets: '.showcase_info',
-  easing: 'easeInOutElastic',
-  translateX: -300,
-  rotate: '-360',
-  duration: 3000,
-  // delay: -1000,
-});
+// .add({
+//   targets: '.showcase_info',
+//   easing: 'easeInOutElastic',
+//   translateX: -30vw,
+//   rotate: '-360',
+//   duration: 3000,
+//   // delay: -1000,
+// });
 
 
 

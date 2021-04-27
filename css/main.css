@@ -23,6 +23,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 /* form body */
@@ -694,6 +695,7 @@ body > section.contact__form > from > div:nth-child(9) > submit {
 .copy {
   font-family: "Montserrat", sans-serif;
   position: relative;
+  margin-bottom: 1.6rem;
   text-align: center;
   font-size: 1.4rem;
 }
@@ -1102,148 +1104,6 @@ ul li {
           box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
-.works_container {
-  width: 90%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: auto;
-  width: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.works_show {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  margin: 4vw 0;
-}
-
-.works_card {
-  width: 26vw;
-  height: 26vw;
-  border-radius: 0 52px 0 52px;
-  -webkit-box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
-          box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
-  text-align: center;
-  margin: 1rem;
-}
-
-.works1,
-.works2,
-.works3,
-.works4,
-.works5,
-.works6 {
-  background-color: #333;
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-background-size: 100% 100%;
-          background-size: 100%;
-}
-
-.works1 {
-  background-image: url("../../images/varuna_desk.jpg");
-}
-
-.works2 {
-  background-image: url("../../images/maite_desk.jpg");
-}
-
-.works3 {
-  background-image: url("../../images/orchard_desk.jpg");
-}
-
-.works4 {
-  background-image: url("../../images/alchemist_desk.jpg");
-}
-
-.works5 {
-  background-image: url("../../images/victor_desk.jpg");
-}
-
-.works_case {
-  margin-bottom: 1rem;
-  -webkit-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  width: 60%;
-  padding: 1rem 0rem;
-  background: #f54642;
-  border: none;
-  color: white;
-  cursor: pointer;
-  border-radius: 30px;
-  font-weight: 600;
-  border: 3px solid #f54642;
-  font-family: "Montserrat", sans-serif;
-  outline: none;
-  position: relative;
-  top: 28.6rem;
-}
-
-.works_case:hover {
-  background: #fff;
-  color: #f54642;
-  border: 3px solid #f54642;
-  font-weight: 600;
-  -webkit-box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
-          box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
-}
-
-.works_case:active {
-  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-}
-
-.works_header {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 1.8vw;
-  margin-bottom: 5vw;
-}
-
-.works_header img {
-  width: 40vw;
-}
-
 #showcase {
   background: #000000;
   min-width: 100vw;
@@ -1336,10 +1196,14 @@ ul li {
   -webkit-transition: all 0.4s ease-in;
   -o-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
+  color: #f54642;
 }
 
 .subparagraph a:hover {
-  color: #f54642;
+  -webkit-transform: skewX(25deg);
+      -ms-transform: skewX(25deg);
+       -o-transform: skewX(25deg);
+          transform: skewX(25deg);
 }
 
 #cards {
@@ -1404,6 +1268,11 @@ ul li {
   transition: opacity 0.1s ease;
 }
 
+#contact__main {
+  width: 100%;
+  height: 20rem;
+}
+
 #works {
   height: auto;
   z-index: 1;
@@ -1415,8 +1284,217 @@ ul li {
   text-transform: uppercase;
 }
 
-#contact__main {
+.works_container {
+  width: 90%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  max-width: 160rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.works_show {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 4vw 0;
+}
+
+.works_card {
+  width: 437px;
+  height: 437px;
+  border-radius: 0 52px 0 52px;
+  -webkit-box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
+          box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  margin: 1rem;
+}
+
+.works1,
+.works2,
+.works3,
+.works4,
+.works5,
+.works6 {
+  background-color: #333;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+}
+
+.works1 {
+  background-image: url("../../images/varuna_desk.jpg");
+}
+
+.works2 {
+  background-image: url("../../images/maite_desk.jpg");
+}
+
+.works3 {
+  background-image: url("../../images/orchard_desk.jpg");
+}
+
+.works4 {
+  background-image: url("../../images/alchemist_desk.jpg");
+}
+
+.works5 {
+  background-image: url("../../images/victor_desk.jpg");
+}
+
+.works6 {
+  background-image: url("../../images/miss_desk.jpg");
+}
+
+.works_case {
+  margin-bottom: 1rem;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  width: 60%;
+  padding: 1rem 0rem;
+  background: #f54642;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: 600;
+  border: 3px solid #f54642;
+  font-family: "Montserrat", sans-serif;
+  outline: none;
+  position: relative;
+  top: 28.6rem;
+}
+
+.works_case:hover {
+  background: #fff;
+  color: #f54642;
+  border: 3px solid #f54642;
+  font-weight: 600;
+  -webkit-box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
+          box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.works_case:active {
+  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.works_header {
   width: 100%;
-  height: 20rem;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 8vw;
+  margin-bottom: 1vw;
+}
+
+.works_header img {
+  width: 40vw;
+}
+
+.works_hover {
+  opacity: 0;
+  position: relative;
+  background: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  padding: 0.6rem 1.5rem;
+  border-radius: 0 52px;
+  -webkit-transition: all 0.35s ease-in;
+  -o-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.works_hover:hover {
+  opacity: 1;
+}
+
+.works_title {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1.2rem;
+}
+
+.works_subtitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1.4rem;
+  color: #f54642;
+}
+
+.works_text {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: left;
+  text-transform: initial;
+}
+
+.works_btn {
+  position: relative;
+  top: 2rem;
+}
+
+.test_header {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4vw;
+  margin-bottom: 3vw;
+}
+
+.test_header img {
+  width: 78vw;
 }
 /*# sourceMappingURL=main.css.map */
