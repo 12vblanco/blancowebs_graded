@@ -1175,6 +1175,8 @@ ul li {
   width: 56rem;
   margin: 0 auto;
   text-align: left;
+  font-size: 2.4rem;
+  width: 66rem;
 }
 
 .subparagraph {
@@ -1186,6 +1188,7 @@ ul li {
   padding-top: 2.6rem;
   width: 56rem;
   margin: 0 auto;
+  font-size: 3rem;
   text-align: left;
 }
 
