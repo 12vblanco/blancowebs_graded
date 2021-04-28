@@ -7,7 +7,6 @@ anime({
   loop: 1,
   endDelay: 200, 
 });
-
 anime({
   targets: '#victor path',
   strokeDashoffset: [anime.setDashoffset, 0],
@@ -27,8 +26,6 @@ anime({
   direction: 'alternate',
   loop: 1,
 });
-
-
 
 var translate = anime.timeline({
   easing: 'easeOutBounce',
