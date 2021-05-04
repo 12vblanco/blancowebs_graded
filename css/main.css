@@ -193,10 +193,11 @@ textarea {
   background: #000000;
   color: #fff;
   margin: 0 auto;
+  text-align: center;
 }
 
 .success h2 {
-  font-size: 3rem;
+  font-size: 6rem;
   position: relative;
   top: -6rem;
 }
