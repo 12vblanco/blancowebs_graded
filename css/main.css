@@ -331,7 +331,10 @@ body > section.contact__form > form > div.form__field-check > input {
   width: 30px;
   height: 30px;
   margin: 0 3rem 2rem 2rem;
-  font-size: 2.4rem;
+}
+
+.agree {
+  font-size: 1.6rem;
 }
 
 body > section > form > div:nth-child(9) {
