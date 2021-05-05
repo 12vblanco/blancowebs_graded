@@ -193,18 +193,19 @@ body > section > form > div:nth-child(8) > submit {
   text-align: left;
   margin: 0 auto;
 }
-body > section.contact__form > form > div.form__field-check > input {
-  border: none;
-  width: 30px;
-  height: 30px;
-}
+// body > section.contact__form > form > div.form__field-check > input {
+//   border: none;
+//   width: 30px;
+//   height: 30px;
+// }
 
 body > section > form > div:nth-child(8) {
   font-size: 2rem;
   width: 100%;
   padding-bottom: 1rem;
 }
-body > section > form > div:nth-child(8) > input {
+body > section > form > div:nth-child(8) > input,
+body > section.contact__form > form > div.form__field-check > input {
   width: 30px;
   height: 30px;
   margin: 0 3rem 2rem 2rem;
