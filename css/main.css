@@ -320,19 +320,19 @@ body > section > from > div:nth-child(8) > submit {
   margin: 0 auto;
 }
 
-body > section > from > div:nth-child(8) {
+body > section > form > div:nth-child(8) {
   font-size: 2rem;
   width: 100%;
   padding-bottom: 1rem;
 }
 
-body > section > from > div:nth-child(8) > input {
+body > section > form > div:nth-child(8) > input {
   width: 30px;
   height: 30px;
   margin: 0 3rem 2rem 2rem;
 }
 
-body > section > from > div:nth-child(9) {
+body > section > form > div:nth-child(9) {
   max-width: 500px;
 }
 
