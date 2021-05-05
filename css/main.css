@@ -372,6 +372,25 @@ select:-webkit-autofill:focus {
           box-shadow: none;
 }
 
+.form_home input:-webkit-autofill,
+.form_home input:-webkit-autofill:hover,
+.form_home input:-webkit-autofill:focus,
+.form_home textarea:-webkit-autofill,
+.form_home textarea:-webkit-autofill:hover,
+.form_home textarea:-webkit-autofill:focus,
+.form_home select:-webkit-autofill,
+.form_home select:-webkit-autofill:hover,
+.form_home select:-webkit-autofill:focus {
+  border: none;
+  -webkit-text-fill-color: black;
+  -webkit-box-shadow: 0 0 0px 0px #000 inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  -o-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 #navbar {
   width: 100%;
   height: auto;
