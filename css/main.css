@@ -316,6 +316,19 @@ body > section > form > div:nth-child(8) > submit {
 }
 
 .form__field-check {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: left;
   margin: 0 auto;
 }
@@ -330,7 +343,7 @@ body > section > form > div:nth-child(8) > input,
 body > section.contact__form > form > div.form__field-check > input {
   width: 30px;
   height: 30px;
-  margin: 0 3rem 2rem 2rem;
+  margin: 0 3rem;
 }
 
 .agree {
