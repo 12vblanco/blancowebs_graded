@@ -320,6 +320,12 @@ body > section > form > div:nth-child(8) > submit {
   margin: 0 auto;
 }
 
+body > section.contact__form > form > div.form__field-check > input {
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+
 body > section > form > div:nth-child(8) {
   font-size: 2rem;
   width: 100%;
