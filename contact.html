@@ -9,7 +9,7 @@
     <title>Victor Blanco Web Developer</title>
   </head>
   <body>
-    <navbar id="navbar">
+    <section id="navbar">
       <div class="navbar_logo">
         <img src="images/logo.png" loading="lazy" alt="Logo" />
       </div>
@@ -24,10 +24,7 @@
             ></a>
           </li>
           <li class="navbar_menu-item">
-            <a
-              href="https://www.linkedin.com/in/12vblanco/"
-              target="_blank"
-              target="_blank"
+            <a href="https://www.linkedin.com/in/12vblanco/" target="_blank"
               ><i class="fab fa-linkedin"></i
             ></a>
           </li>
@@ -75,20 +72,24 @@
           </div>
         </div>
       </div>
-    </navbar>
+    </section>
 
     <section class="contact__form">
-
-      <form class="contact__form-form" action="/success.html" method="POST" data-netlify="true">
+      <form
+        class="contact__form-form"
+        action="/success.html"
+        method="POST"
+        data-netlify="true"
+      >
         <div class="form__field">
           <input
             type="text"
             name="contact_name"
             placeholder="Enter Your Name Here*"
             id="contact_name"
-            spellcheck="false"        
+            spellcheck="false"
           />
-          <label for="contact_mane">Name</label>
+          <label for="#contact_mane">Name</label>
         </div>
         <br />
 
@@ -109,10 +110,8 @@
         <div class="form__field">
           <textarea
             name="contact_comments"
-            type="text"
             placeholder="Tell me about your idea here*"
             id="contact_comments"
-            autocomplete="off"
             data-autoresize
             rows="1"
           ></textarea>
@@ -120,21 +119,25 @@
         </div>
         <br />
         <div class="form__field-check">
-          <input type="checkbox" class="check_terms" required
-          >I agree to the terms & conditions</input>
+          <input
+            type="checkbox"
+            class="check_terms"
+            required
+            I
+            agree
+            to
+            the
+            terms
+            &
+            conditions
+          />
         </div>
-        <div class="form__field">
-          <submit class="btn btn_centre">Send Email</submit>
-
-        </div>
+        <submit class="btn btn_centre">Send Email</submit>
       </form>
     </section>
 
-    
-
     <footer id="footer">
       <div class="container">
-
         <div class="container_section">
           <ul>
             <li class="footer_title"><a href="#works">Case Studies</a></li>
@@ -177,7 +180,7 @@
           <ul>
             <li class="footer_title">About</li>
             <li class="footer_item">
-              <a href="images/Victor Blanco Web Developer.pdf" target="_blank"
+              <a href="images/Victor-Blanco-Web Developer.pdf" target="_blank"
                 ><span><i class="far fa-user-circle"></i></span>CV Download</a
               >
             </li>
@@ -258,8 +261,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="js/text_animation.js"></script>
 
-    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
-    <script type="text/javascript">
+    <script src="js/vanilla-tilt.js"></script>
+    <script>
       VanillaTilt.init(document.querySelectorAll(".card"), {
         max: 25,
         speed: 400,
