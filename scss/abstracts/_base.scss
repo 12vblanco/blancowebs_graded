@@ -1,3 +1,22 @@
+// MEDIA QUERY MANAGER
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == ph {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tp {
+    @media only screen and (max-width: 59.37em) {
+      @content;
+    }
+  }
+  @if $breakpoint == dsk {
+    @media only screen and (max-width: 125em) {
+      @content;
+    }
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -21,11 +40,22 @@ html {
   font-size: 62.5%;
   background: $white;
   scroll-behavior: smooth;
+
+  // @include respond(dsk) {
+  //   font-size: 56.25%;
+  // }
+
+  @include respond(tp) {
+    font-size: 50%;
+  }
+  @include respond(ph) {
+    font-size: 34%;
+  }
+  @include respond(lrg) {
+    font-size: 75%;
+  }
 }
 body {
-  // background-image: url(../../images/bg_blur_white.svg);
-  // background-repeat: no-repeat;
-  // background-size: cover;
   font-family: $primary-font;
   overflow-x: hidden;
 }
