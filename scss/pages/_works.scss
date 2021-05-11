@@ -29,7 +29,7 @@
   align-items: center;
   flex-wrap: wrap;
   margin: 4vw 0;
-  @include respond(ph) {
+  @include respond(tp) {
     flex-direction: column;
   }
 }
@@ -156,7 +156,7 @@
   margin-bottom: 1.4rem;
   color: $accent;
   @include respond(ph) {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 .works_text {
@@ -168,7 +168,7 @@
   text-transform: initial;
   height: 252px;
   @include respond(ph) {
-    font-size: 1.8rem;
+    font-size: 11px;
     margin-bottom: 0.2rem;
     height: 200px;
   }
@@ -179,6 +179,7 @@
   top: 2rem;
   @include respond(ph) {
     font-size: 1.8rem;
+    top: 6rem;
   }
 }
 
@@ -192,7 +193,7 @@
   margin-bottom: 1vw;
   img {
     width: 78vw;
-    @include respond(ph) {
+    @include respond(tp) {
       width: 96%;
       margin: 12rem 0 0 0;
     }
@@ -203,7 +204,7 @@
   display: flex;
   width: 30vw;
   margin: 2rem;
-  @include respond(ph) {
+  @include respond(tp) {
     width: 90%;
     margin: 4rem 0;
   }
@@ -219,7 +220,10 @@
   }
   p {
     text-transform: initial;
-    font-size: 1.8rem;
+    font-size: 18px;
     font-weight: 500;
+    @include respond(tp) {
+      font-size: 16px;
+    }
   }
 }

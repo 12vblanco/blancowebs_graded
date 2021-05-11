@@ -1818,7 +1818,7 @@ ul li {
   margin: 4vw 0;
 }
 
-@media only screen and (max-width: 608px) {
+@media only screen and (max-width: 768px) {
   .works_show {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1989,7 +1989,7 @@ ul li {
 
 @media only screen and (max-width: 608px) {
   .works_subtitle {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -2011,7 +2011,7 @@ ul li {
 
 @media only screen and (max-width: 608px) {
   .works_text {
-    font-size: 1.8rem;
+    font-size: 11px;
     margin-bottom: 0.2rem;
     height: 200px;
   }
@@ -2025,6 +2025,7 @@ ul li {
 @media only screen and (max-width: 608px) {
   .works_btn {
     font-size: 1.8rem;
+    top: 6rem;
   }
 }
 
@@ -2051,7 +2052,7 @@ ul li {
   width: 78vw;
 }
 
-@media only screen and (max-width: 608px) {
+@media only screen and (max-width: 768px) {
   .test_header img {
     width: 96%;
     margin: 12rem 0 0 0;
@@ -2067,7 +2068,7 @@ ul li {
   margin: 2rem;
 }
 
-@media only screen and (max-width: 608px) {
+@media only screen and (max-width: 768px) {
   .testimonial {
     width: 90%;
     margin: 4rem 0;
@@ -2087,7 +2088,13 @@ ul li {
 
 .testimonial p {
   text-transform: initial;
-  font-size: 1.8rem;
+  font-size: 18px;
   font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+  .testimonial p {
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
