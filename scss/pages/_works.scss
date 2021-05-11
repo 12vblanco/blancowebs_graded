@@ -7,11 +7,14 @@
   background-size: 140%;
   background-position: bottom;
   text-transform: uppercase;
+  @include respond(dsk) {
+    margin-top: 0rem;
+  }
   @include respond(tp) {
     margin-top: 20rem;
   }
   @include respond(ph) {
-    margin-top: 40rem;
+    margin-top: 20rem;
   }
 }
 .works_container {
@@ -26,6 +29,9 @@
   align-items: center;
   flex-wrap: wrap;
   margin: 4vw 0;
+  @include respond(ph) {
+    flex-direction: column;
+  }
 }
 
 .works_card {
@@ -36,6 +42,12 @@
   box-shadow: $shade_large;
   text-align: center;
   margin: 1rem;
+  @include respond(ph) {
+    width: 94vw;
+    height: 94vw;
+    max-width: 340px;
+    max-height: 340px;
+  }
 }
 .works1,
 .works2,
@@ -127,26 +139,47 @@
   }
 }
 .works_title {
-  font-size: 3rem;
+  font-size: 30px;
   font-weight: 900;
   margin-bottom: 1.2rem;
+  @include respond(dsk) {
+    margin-top: 1rem;
+  }
+  @include respond(ph) {
+    font-size: 3.4rem;
+    margin-top: 1rem;
+  }
 }
 .works_subtitle {
-  font-size: 1.4rem;
+  font-size: 14px;
   font-weight: 700;
   margin-bottom: 1.4rem;
   color: $accent;
+  @include respond(ph) {
+    font-size: 1.8rem;
+  }
 }
 .works_text {
-  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
   font-weight: 600;
   text-align: left;
   text-transform: initial;
+  height: 252px;
+  @include respond(ph) {
+    font-size: 1.8rem;
+    margin-bottom: 0.2rem;
+    height: 200px;
+  }
 }
 
 .works_btn {
   position: relative;
   top: 2rem;
+  @include respond(ph) {
+    font-size: 1.8rem;
+  }
 }
 
 .test_header {
@@ -159,6 +192,10 @@
   margin-bottom: 1vw;
   img {
     width: 78vw;
+    @include respond(ph) {
+      width: 96%;
+      margin: 12rem 0 0 0;
+    }
   }
 }
 
@@ -166,6 +203,11 @@
   display: flex;
   width: 30vw;
   margin: 2rem;
+  @include respond(ph) {
+    width: 90%;
+    margin: 4rem 0;
+  }
+
   img {
     float: left;
     top: 2rem;

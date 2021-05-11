@@ -5,6 +5,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @include respond(ph) {
+    min-height: 40vh;
+  }
 }
 .animation_home {
   position: absolute;
@@ -13,6 +16,9 @@
   transform: translate(-50%, -50%);
   width: 80vw;
   margin: auto;
+  @include respond(ph) {
+    top: 30%;
+  }
 }
 
 #hello {
@@ -37,12 +43,24 @@
   text-align: left;
   font-size: 2.4rem;
   width: 66rem;
+  @include respond(ph) {
+    width: 90%;
+    padding-right: 2rem;
+  }
+  @include respond(ph) {
+    margin-top: 24rem;
+  }
 }
 
 .subparagraph {
   @include subparagraph;
   font-size: 3rem;
   text-align: left;
+  @include respond(ph) {
+    font-size: 2.6rem;
+    // text-align: center;
+    width: 80%;
+  }
 
   a {
     color: inherit;
@@ -60,12 +78,9 @@
 // CARDS
 #cards {
   max-width: 100vw;
-  height: 80vh;
-  padding: 0 5vw;
-
   background-image: url(../../images/blur_yellow_pink.svg);
   background-repeat: no-repeat;
-  background-size: 130%;
+  background-size: cover;
   background-position: center;
 }
 
@@ -80,24 +95,29 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @include respond(ph) {
+    min-height: 40vh;
+  }
 }
 
 .contact_header {
   margin-top: 4rem;
+  @include respond(ph) {
+    width: 90%;
+    text-align: center;
+  }
 }
 
 .contact_sub {
   @include subheader;
+  @include respond(ph) {
+    font-size: 3rem;
+  }
 }
 
 // FORM
 #form {
   background: $white;
-  // background: radial-gradient(
-  //   circle,
-  //   rgb(227, 227, 226) 42%,
-  //   rgb(229, 229, 229) 5%
-  // );
   visibility: hidden;
   opacity: 0;
   height: 0;

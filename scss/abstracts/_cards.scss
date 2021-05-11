@@ -12,15 +12,27 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  @include respond(dsk) {
+    height: 70vh;
+  }
+  @include respond(tl) {
+    height: 60vh;
+  }
+  @include respond(ph) {
+    height: auto;
+    margin: 5rem 0rem;
+  }
 }
 
 .cards_container {
   width: 100%;
-  max-width: 180rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   transform-style: preserve-3d;
+  @include respond(ph) {
+    flex-direction: column;
+  }
 
   svg {
     width: 100%;
@@ -31,25 +43,25 @@
 .card {
   background: $white;
   transform-style: preserve-3d;
-  min-height: 42rem;
-  max-width: 32rem;
+  height: 42rem;
+  width: 30rem;
   border-radius: 30px;
-  padding: 2rem 5rem;
+  padding: 2rem 2rem 0 2rem;
   z-index: 3;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
   transform: perspective(120rem);
   transition: all 0.2s ease;
   z-index: 1;
+  @include respond(tl) {
+    width: 24rem;
+    height: 32rem;
+  }
+  @include respond(ph) {
+    margin: 6rem 4rem;
+    width: 40rem;
+    height: 50rem;
+  }
 }
-
-// .card1 img,
-// .card2 img,
-// .card3 img {
-//   max-width: 32rem;
-//   border: 0.25px solid rgba($primary-color, 0.2);
-//   box-shadow: 2px 2px 8px rgba($primary-color, 0.3);
-//   z-index: 3;
-// }
 
 .card_circle {
   width: 14rem;
@@ -57,7 +69,6 @@
   position: absolute;
   border-radius: 50%;
   z-index: 1;
-
   background: linear-gradient(
       231.08deg,
       #5f6fff 14.53%,
@@ -65,6 +76,12 @@
     ),
     linear-gradient(180deg, #ffc530 37.5%, rgba(255, 255, 255, 0) 100%),
     linear-gradient(227.68deg, #ff2e29 86.62%, rgba(255, 255, 255, 0) 86.63%);
+
+  @include respond(tl) {
+    width: 10rem;
+    height: 10rem;
+    top: 2rem;
+  }
 }
 .card_icon {
   display: flex;
@@ -79,6 +96,10 @@
   transition: all 0.75s ease-out;
   margin-right: 12px;
   transform: translateZ(8.8rem);
+  @include respond(tl) {
+    width: 10rem;
+    height: 9rem;
+  }
 }
 .img_2 {
   position: relative;
@@ -88,45 +109,93 @@
   transition: all 0.75s ease-out;
   margin: 0.5rem;
   transform: translateZ(8.8rem);
+  @include respond(tl) {
+    width: 9rem;
+    height: 9rem;
+    top: -1.3rem;
+    margin-bottom: -0.6rem;
+  }
+  @include respond(ph) {
+    top: -0.6rem;
+  }
 }
+.wordpress {
+  margin-bottom: -0.6rem;
+  @include respond(tl) {
+    margin-bottom: 0.2rem;
+  }
+}
+
+.testing {
+  margin-bottom: -0.6rem;
+  @include respond(tl) {
+    margin-bottom: 0.2rem;
+  }
+}
+
 .img_3 {
   width: 8.8rem;
   z-index: 2;
   transition: all 0.75s ease-out;
   transform: translateZ(8.8rem);
+  @include respond(tl) {
+    width: 7rem;
+    height: 9rem;
+  }
 }
 
 .card_info {
   font-family: $secondary-font;
-  font-size: 2.6rem;
-  transition: all 0.75s ease-out;
-  transform: translateZ(8.8rem);
+  // transition: all 0.75s ease-out;
+  // transform: translateZ(8.8rem);
 }
 
 .card_title {
   font-size: 3rem;
   margin-top: 2rem;
+  margin-left: 2rem;
   transition: all 0.75s ease-out;
   color: $primary-color;
   transform: translateZ(8.8rem);
+  @include respond(tl) {
+    font-size: 2.6rem;
+    margin-top: 1rem;
+  }
+  @include respond(ph) {
+    font-size: 4.8rem;
+  }
 }
 
 .card_text {
+  display: flex;
+  align-items: center;
   font-size: 1.4rem;
-  padding: 2rem 0rem;
+  // padding: 2rem 0rem;
+  margin-left: 2rem;
   font-weight: 500;
   transition: all 0.75s ease-out;
   text-transform: uppercase;
   color: $primary-color;
   transform: translateZ(10.8rem);
+  height: 12rem;
+  @include respond(tl) {
+    font-size: 1.2rem;
+    height: 8rem;
+  }
+  @include respond(ph) {
+    font-size: 2.2rem;
+    margin-top: 2rem;
+    height: 14rem;
+  }
 }
 
 .card_intouch {
   margin-bottom: 1rem;
   transition: all 0.3s ease-out;
-  transform: translateZ(8.8rem);
-  width: 100%;
+  width: 90%;
   padding: 1rem 0rem;
+  margin-left: 5%;
+  // margin-top: 10%;
   background: $accent;
   border: none;
   color: white;
@@ -136,7 +205,18 @@
   border: 3px solid $accent;
   font-family: $primary-font;
   outline: none;
-  // transform: translateZ(8.8rem);
+  transform: translateZ(10.8rem);
+
+  @include respond(tl) {
+    font-size: 1.2rem;
+    padding: 0.6rem;
+    // margin-top: 5%;
+  }
+  @include respond(ph) {
+    font-size: 2rem;
+    padding: 1.2rem;
+    margin-top: 6%;
+  }
 
   &:hover {
     background: $white;

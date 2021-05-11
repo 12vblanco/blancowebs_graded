@@ -9,13 +9,21 @@
 }
 .navbar_logo {
   margin: 1.6rem 0rem 1rem 4rem;
+  @include respond(ph) {
+    margin: 2rem 1rem;
+  }
+  img {
+    @include respond(ph) {
+      max-width: 70%;
+    }
+  }
 }
 
 .navbar_menu {
   display: flex;
   flex-direction: row;
   width: 70%;
-  @include respond(tp) {
+  @include respond(tl) {
     display: none;
   }
 }
@@ -55,7 +63,7 @@
 .burger {
   display: none;
   width: auto;
-  @include respond(tp) {
+  @include respond(tl) {
     display: flex;
   }
 }
@@ -91,6 +99,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @include respond(ph) {
+    top: 0rem;
+    right: 0rem;
+  }
 }
 
 /* hamburger line */
@@ -177,6 +189,12 @@
   justify-content: center;
   transform: scale(0);
   transition: all 0.4s ease-in;
+  @include respond(ph) {
+    width: 400vw;
+    height: 400vw;
+    top: -50%;
+    left: -50%;
+  }
 }
 
 .menu_background > div {
