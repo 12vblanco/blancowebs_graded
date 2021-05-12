@@ -62,10 +62,14 @@ body {
 }
 
 /* form body */
-.form_container {
+#main_form {
+  /* name area */
+}
+
+#main_form .form_container {
   position: relative;
   width: 100%;
-  height: 60rem;
+  height: 56rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -76,14 +80,7 @@ body {
           justify-content: center;
 }
 
-@media only screen and (max-width: 608px) {
-  .form_container {
-    width: 90vw;
-    margin: 0 auto;
-  }
-}
-
-.form_home {
+#main_form .form_home {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -99,11 +96,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 40rem;
-  min-width: 400px;
-  height: 44rem;
-  min-height: 440px;
-  margin: 3rem;
-  z-index: 3;
+  height: 48rem;
+  margin: 2rem 3rem;
   background: #fff;
   border: 1px solid rgba(255, 255, 255, 0.8);
   -webkit-box-sizing: border-box;
@@ -114,23 +108,12 @@ body {
   color: #000000;
 }
 
-@media only screen and (max-width: 608px) {
-  .form_home {
-    width: 320px;
-    min-width: 320px;
-    min-height: 64rem;
-  }
-}
-
-/* name area */
-input,
-select,
-textarea {
+#main_form input,
+#main_form select,
+#main_form textarea {
   position: relative;
   width: 30rem;
-  min-width: 300px;
   height: 5rem;
-  min-height: 50px;
   margin: 0 auto;
   background: rgba(239, 238, 238, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -149,39 +132,20 @@ textarea {
   font-family: "Poppins", sans-serif;
 }
 
-@media only screen and (max-width: 608px) {
-  input,
-  select,
-  textarea {
-    width: 90vw;
-  }
-}
-
-@media only screen and (max-width: 608px) {
-  input,
-  select,
-  textarea {
-    width: 300px;
-    min-width: 300px;
-  }
-}
-
-textarea {
+#main_form textarea {
   height: 120px;
 }
 
-.form_text {
+#main_form .form_text {
   position: relative;
-  width: 15.5rem;
-  height: 33px;
-  margin-left: 5.6rem;
+  margin-left: 7.6rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 1.9rem;
-  line-height: 2.2;
+  font-size: 2rem;
+  line-height: 2;
 }
 
-.close {
+#main_form .close {
   position: absolute;
   top: 0;
   right: 1rem;
@@ -197,7 +161,7 @@ textarea {
   transition: all 0.3s ease;
 }
 
-.close:hover {
+#main_form .close:hover {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
        -o-transform: rotate(90deg);
@@ -210,9 +174,7 @@ textarea {
 }
 
 .contact__form {
-  width: 100%;
-  height: 100%;
-  padding: 8rem;
+  padding: 6rem 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -231,7 +193,7 @@ textarea {
 }
 
 .contact__form-form {
-  min-width: 460px;
+  max-width: 46rem;
   margin: 0 auto;
 }
 
@@ -294,18 +256,7 @@ textarea {
 
 .form__field textarea {
   font-size: 3rem;
-  max-width: 500px;
-}
-
-body > section.contact__form > form > div:nth-child(9) > submit {
-  position: relative;
-  left: 50%;
-  -webkit-transform: translate(-55%);
-      -ms-transform: translate(-55%);
-       -o-transform: translate(-55%);
-          transform: translate(-55%);
-  text-align: center;
-  width: 50%;
+  width: 50rem;
 }
 
 #contact_name,
@@ -314,14 +265,13 @@ body > section.contact__form > form > div:nth-child(9) > submit {
 #contact_test,
 #contact_cms,
 #contact_comments {
-  background: none !important;
+  background: none;
   outline: none;
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
   color: #fff;
   width: 100%;
-  margin-left: -2rem;
   background: none;
   font-size: 3rem;
 }
@@ -369,7 +319,7 @@ body > section.contact__form > form > div:nth-child(9) > submit {
 }
 
 input:-internal-autofill-selected {
-  background: none !important;
+  background: none;
   color: #e8f0fe;
 }
 
@@ -409,15 +359,11 @@ body > section > form > div:nth-child(8) > input,
 body > section.contact__form > form > div.form__field-check > input {
   width: 30px;
   height: 30px;
-  margin: 0 3rem;
+  margin: 0 3rem 0 0;
 }
 
 .agree {
   font-size: 1.6rem;
-}
-
-body > section > form > div:nth-child(9) {
-  max-width: 500px;
 }
 
 input:-webkit-autofill,
@@ -456,6 +402,36 @@ select:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+textarea {
+  height: 14rem;
+}
+
+.contact__paragraph {
+  width: 60%;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 8rem 0 8rem 0;
+}
+
+.contact__paragraph h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 8rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.contact__paragraph p {
+  font-size: 2rem;
+  margin-top: 2rem;
+  line-height: 1.5;
+}
+
+body > section.contact__paragraph > p.open_contact.final > a {
+  font-size: 3rem;
+  color: #f54642;
 }
 
 #navbar {
@@ -594,12 +570,18 @@ select:-webkit-autofill:focus {
 .toggler {
   position: absolute;
   top: 1.3rem;
-  right: 3.1rem;
+  right: 2.6rem;
   z-index: 2;
   cursor: pointer;
   width: 50px;
   height: 50px;
   opacity: 0;
+}
+
+@media only screen and (max-width: 608px) {
+  .toggler {
+    right: 1.2rem;
+  }
 }
 
 .hamburger {
@@ -659,7 +641,7 @@ select:-webkit-autofill:focus {
 /* top & bottom lines */
 .hamburger > div:before,
 .hamburger > div::after {
-  content: "";
+  content: '';
   position: absolute;
   z-index: 1;
   top: -14px;
@@ -1069,7 +1051,7 @@ ul li {
 }
 
 .btn:before {
-  content: "";
+  content: '';
   position: absolute;
   top: -5px;
   left: -5px;
@@ -1134,7 +1116,7 @@ ul li {
   }
 }
 
-.btn_form {
+#main_form .btn_form {
   position: relative;
   margin: 0 auto;
   margin-top: 2rem;
@@ -1142,7 +1124,7 @@ ul li {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 3rem;
   color: #fff;
   border-radius: 16px;
   background: #f54642;
@@ -1156,21 +1138,22 @@ ul li {
 }
 
 @media only screen and (max-width: 608px) {
-  .btn_form {
+  #main_form .btn_form {
     margin-bottom: 2rem;
+    font-size: 3rem;
   }
 }
 
-.btn_form:active, .btn_form:focus {
+#main_form .btn_form:active, #main_form .btn_form:focus {
   outline: none;
 }
 
-.btn_form:hover::after {
+#main_form .btn_form:hover::after {
   width: 100%;
   height: 100%;
 }
 
-.btn_form:active {
+#main_form .btn_form:active {
   border: 3px solid rgba(255, 255, 255, 0.25);
   -webkit-box-shadow: -3px -3px 8px rgba(255, 255, 255, 0.25), 3px 3px 6px rgba(0, 0, 0, 0.25), inset 1px 1px 4px rgba(255, 255, 255, 0.25), inset -1px -1px 4px rgba(0, 0, 0, 0.25);
           box-shadow: -3px -3px 8px rgba(255, 255, 255, 0.25), 3px 3px 6px rgba(0, 0, 0, 0.25), inset 1px 1px 4px rgba(255, 255, 255, 0.25), inset -1px -1px 4px rgba(0, 0, 0, 0.25);
