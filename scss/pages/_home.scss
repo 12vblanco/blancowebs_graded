@@ -17,7 +17,7 @@
   width: 80vw;
   margin: auto;
   @include respond(ph) {
-    top: 30%;
+    top: 38%;
   }
 }
 
@@ -51,7 +51,7 @@
 
 #showcase > div.showcase_info > h1 {
   @include respond(ph) {
-    margin-top: 25%;
+    margin-top: 34%;
   }
 }
 
