@@ -177,7 +177,7 @@
   text-transform: uppercase;
   color: $primary-color;
   transform: translateZ(10.8rem);
-  height: 12rem;
+  height: 11rem;
   @include respond(tl) {
     font-size: 1.2rem;
     height: 8rem;
@@ -190,10 +190,10 @@
 }
 
 .card_intouch {
-  margin-bottom: 1rem;
+  // margin-bottom: 1rem;
   transition: all 0.3s ease-out;
   width: 90%;
-  padding: 0.8rem 0rem;
+  padding: 0.7rem 0rem;
   margin-left: 5%;
   // margin-top: 10%;
   background: $accent;
@@ -211,7 +211,7 @@
 
   @include respond(tl) {
     font-size: 1.2rem;
-    padding: 0.6rem;
+    // padding: 0.6rem;
     // margin-top: 5%;
   }
   @include respond(ph) {
