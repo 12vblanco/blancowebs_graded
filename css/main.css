@@ -369,7 +369,7 @@ body > section.contact__form > form > div.form__field-check > input {
 
 @media only screen and (max-width: 608px) {
   .agree {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -1078,6 +1078,7 @@ ul li {
   -webkit-transition: border 0.4s ease-out;
   -o-transition: border 0.4s ease-out;
   transition: border 0.4s ease-out;
+  text-align: center;
 }
 
 .btn_centre {
@@ -1177,7 +1178,7 @@ ul li {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2.6rem;
   color: #fff;
   border-radius: 16px;
   background: #f54642;
@@ -1518,7 +1519,7 @@ ul li {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   width: 90%;
-  padding: 1rem 0rem;
+  padding: 0.8rem 0rem;
   margin-left: 5%;
   background: #f54642;
   border: none;
@@ -1526,6 +1527,8 @@ ul li {
   cursor: pointer;
   border-radius: 30px;
   font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
   border: 3px solid #f54642;
   font-family: "Montserrat", sans-serif;
   outline: none;
@@ -2051,6 +2054,12 @@ ul li {
 .works_btn {
   position: relative;
   top: 2rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, 2rem);
+      -ms-transform: translate(-50%, 2rem);
+       -o-transform: translate(-50%, 2rem);
+          transform: translate(-50%, 2rem);
+  font-size: 1.6rem;
 }
 
 @media only screen and (max-width: 608px) {

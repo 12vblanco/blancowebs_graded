@@ -61,22 +61,22 @@
   background-size: 100%;
 }
 .works1 {
-  background-image: url("../../images/varuna_desk.jpg");
+  background-image: url('../../images/varuna_desk.jpg');
 }
 .works2 {
-  background-image: url("../../images/maite_desk.jpg");
+  background-image: url('../../images/maite_desk.jpg');
 }
 .works3 {
-  background-image: url("../../images/orchard_desk.jpg");
+  background-image: url('../../images/orchard_desk.jpg');
 }
 .works4 {
-  background-image: url("../../images/alchemist_desk.jpg");
+  background-image: url('../../images/alchemist_desk.jpg');
 }
 .works5 {
-  background-image: url("../../images/victor_desk.jpg");
+  background-image: url('../../images/victor_desk.jpg');
 }
 .works6 {
-  background-image: url("../../images/miss_desk.jpg");
+  background-image: url('../../images/miss_desk.jpg');
 }
 
 .works_case {
@@ -177,6 +177,9 @@
 .works_btn {
   position: relative;
   top: 2rem;
+  left: 50%;
+  transform: translate(-50%, 2rem);
+  font-size: 1.6rem;
   @include respond(ph) {
     font-size: 1.8rem;
     top: 6rem;
