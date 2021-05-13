@@ -47,8 +47,11 @@
     width: 90%;
     padding-right: 2rem;
   }
+}
+
+#showcase > div.showcase_info > h1 {
   @include respond(ph) {
-    margin-top: 24rem;
+    margin-top: 25%;
   }
 }
 
