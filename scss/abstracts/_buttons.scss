@@ -19,6 +19,14 @@
   transition: border 0.4s ease-out;
 }
 
+.btn_centre {
+  position: relative;
+  margin: 3rem;
+  top: 0;
+  left: 50%;
+  transform: translate(-62%, 0);
+}
+
 .btn:hover {
   color: #fff;
   border: 3px solid transparent;
@@ -110,10 +118,6 @@
   }
 }
 .button_open {
-  position: relative;
-  margin: 3rem;
-}
-.btn_centre {
   position: relative;
   margin: 3rem;
 }
