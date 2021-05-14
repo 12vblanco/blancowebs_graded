@@ -90,11 +90,7 @@ close.addEventListener('click', () => {
     'height 0.4s, opacity .4s';
 });
 //  CONTACT BTN
-
-
-window.onload = function () {
-  const contact = document.querySelectorAll('.open_contact');
-  contact.addEventListener('click', () => {
-    window.open('../contact.html', '_self');
-  });
-};
+const contact = document.querySelectorAll('.open_contact');
+contact.addEventListener('click', () => {
+  window.open('../contact.html', '_self');
+});
