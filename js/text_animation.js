@@ -91,6 +91,9 @@ close.addEventListener('click', () => {
 });
 //  CONTACT BTN
 const contact = document.querySelectorAll('.open_contact');
-contact.addEventListener('click', () => {
-  window.open('../contact.html', '_self');
-});
+
+if (contact) {
+  contact.addEventListener('click', () => {
+    window.open('../contact.html', '_self');
+  });
+}
