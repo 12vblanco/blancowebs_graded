@@ -13,11 +13,11 @@ a {
 }
 
 a:hover {
-  color: #f54642;
+  color: #a50b09;
 }
 
 .active {
-  color: #f54642;
+  color: #a50b09;
 }
 
 html {
@@ -473,7 +473,7 @@ textarea {
 
 body > section.contact__paragraph > p.open_contact.final > a {
   font-size: 3rem;
-  color: #f54642;
+  color: #a50b09;
 }
 
 #navbar {
@@ -585,7 +585,7 @@ body > section.contact__paragraph > p.open_contact.final > a {
 .navbar_menu-item a:active:hover,
 .navbar_menu-item a:link:hover,
 .navbar_menu-item .fab:hover {
-  color: #f54642;
+  color: #a50b09;
 }
 
 .burger {
@@ -839,7 +839,7 @@ body > section.contact__paragraph > p.open_contact.final > a {
 }
 
 .burger_item a:hover {
-  color: #f54642;
+  color: #a50b09;
 }
 
 .fab {
@@ -848,7 +848,7 @@ body > section.contact__paragraph > p.open_contact.final > a {
 }
 
 .active {
-  color: #f54642;
+  color: #a50b09;
 }
 
 #footer {
@@ -910,7 +910,7 @@ body > section.contact__paragraph > p.open_contact.final > a {
 }
 
 .container a:hover {
-  color: #f54642;
+  color: #a50b09;
 }
 
 .container a:hover .fab,
@@ -974,7 +974,7 @@ body > section.contact__paragraph > p.open_contact.final > a {
   font-size: 1.4rem;
   position: relative;
   bottom: 0;
-  color: #f54642;
+  color: #a50b09;
   margin: 0 1rem;
 }
 
@@ -1125,7 +1125,7 @@ ul li {
       -ms-transform: translateY(-100%);
        -o-transform: translateY(-100%);
           transform: translateY(-100%);
-  background: #f54642;
+  background: #a50b09;
   -webkit-background-size: 400% 400%;
           background-size: 400%;
   border-radius: 40px;
@@ -1190,7 +1190,7 @@ ul li {
   font-size: 2.6rem;
   color: #fff;
   border-radius: 16px;
-  background: #f54642;
+  background: #a50b09;
   cursor: pointer;
   border: 2px solid rgba(255, 255, 255, 0.25);
   -webkit-box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.25), 6px 6px 14px rgba(0, 0, 0, 0.25), inset 3px 3px 8px rgba(255, 255, 255, 0.25), inset -3px -3px 8px rgba(0, 0, 0, 0.25);
@@ -1530,13 +1530,13 @@ ul li {
   padding: 0.7rem 0rem;
   margin-left: 5%;
   border: none;
-  color: #f54642;
+  color: #a50b09;
   cursor: pointer;
   border-radius: 30px;
   font-weight: 600;
   font-size: 1.6rem;
   text-align: center;
-  border: 3px solid #f54642;
+  border: 3px solid #a50b09;
   font-family: "Montserrat", sans-serif;
   outline: none;
   -webkit-transform: translateZ(10.8rem);
@@ -1689,7 +1689,7 @@ ul li {
   -webkit-transition: all 0.4s ease-in;
   -o-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
-  color: #f54642;
+  color: #a50b09;
 }
 
 .subparagraph a:hover {
@@ -1922,13 +1922,13 @@ ul li {
   transition: all 0.3s ease-out;
   width: 60%;
   padding: 1rem 0rem;
-  background: #f54642;
+  background: #a50b09;
   border: none;
   color: white;
   cursor: pointer;
   border-radius: 30px;
   font-weight: 600;
-  border: 3px solid #f54642;
+  border: 3px solid #a50b09;
   font-family: "Montserrat", sans-serif;
   outline: none;
   position: relative;
@@ -1937,8 +1937,8 @@ ul li {
 
 .works_case:hover {
   background: #fff;
-  color: #f54642;
-  border: 3px solid #f54642;
+  color: #a50b09;
+  border: 3px solid #a50b09;
   font-weight: 600;
   -webkit-box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
           box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
@@ -2015,7 +2015,7 @@ ul li {
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 1.4rem;
-  color: #f54642;
+  color: #a50b09;
 }
 
 @media only screen and (max-width: 608px) {
