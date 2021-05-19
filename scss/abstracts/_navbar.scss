@@ -13,6 +13,8 @@
     margin: 2rem 1rem;
   }
   img {
+    width: 271;
+    height: 109;
     @include respond(ph) {
       max-width: 70%;
     }
