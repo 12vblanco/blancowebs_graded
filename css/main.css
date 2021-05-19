@@ -1970,6 +1970,7 @@ ul li {
 
 .works_header img {
   width: 40vw;
+  height: auto;
 }
 
 .works_hover {
