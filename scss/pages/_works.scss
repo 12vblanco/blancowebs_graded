@@ -197,6 +197,7 @@
   margin-bottom: 1vw;
   img {
     width: 78vw;
+    height: auto;
     @include respond(tp) {
       width: 96%;
       margin: 12rem 0 0 0;

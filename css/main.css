@@ -2088,6 +2088,7 @@ ul li {
 
 .test_header img {
   width: 78vw;
+  height: auto;
 }
 
 @media only screen and (max-width: 768px) {
