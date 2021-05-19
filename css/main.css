@@ -511,6 +511,7 @@ body > section.contact__paragraph > p.open_contact.final > a {
 @media only screen and (max-width: 608px) {
   .navbar_logo img {
     max-width: 70%;
+    height: auto;
   }
 }
 

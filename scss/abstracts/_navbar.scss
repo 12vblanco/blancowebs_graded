@@ -17,6 +17,7 @@
     height: 109;
     @include respond(ph) {
       max-width: 70%;
+      height: auto;
     }
   }
 }
