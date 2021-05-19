@@ -1520,9 +1520,8 @@ ul li {
   width: 90%;
   padding: 0.7rem 0rem;
   margin-left: 5%;
-  background: #f54642;
   border: none;
-  color: white;
+  color: #f54642;
   cursor: pointer;
   border-radius: 30px;
   font-weight: 600;
@@ -1547,15 +1546,6 @@ ul li {
     padding: 1.2rem;
     margin-top: 6%;
   }
-}
-
-.card_intouch:hover {
-  background: #fff;
-  color: #f54642;
-  border: 3px solid #f54642;
-  font-weight: 600;
-  -webkit-box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
-          box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
 }
 
 .card_intouch:active {
