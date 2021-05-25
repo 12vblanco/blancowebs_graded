@@ -1399,8 +1399,7 @@ ul li {
 
 .img_2 {
   position: relative;
-  top: 0.9rem;
-  width: 12rem;
+  width: 13rem;
   z-index: 2;
   -webkit-transition: all 0.75s ease-out;
   -o-transition: all 0.75s ease-out;
